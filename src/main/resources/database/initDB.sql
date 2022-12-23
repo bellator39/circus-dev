@@ -60,3 +60,12 @@ create table if not exists circusteam(
                            link_facebook varchar(1024),
                            date_create date
 );
+
+create table if not exists contact(
+    id serial primary key,
+    name varchar(256),
+    soname varchar(256),
+    email varchar(256),
+    message varchar(1024),
+    date_send date
+);
