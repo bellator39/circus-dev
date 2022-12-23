@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/RoleUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Circus domain">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671815405693</updated>
       <workItem from="1671815407089" duration="365000" />
-      <workItem from="1671831884039" duration="676000" />
+      <workItem from="1671831884039" duration="1016000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -87,7 +86,35 @@
       <option name="project" value="LOCAL" />
       <updated>1671832134870</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Role user domain">
+      <created>1671832566528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671832566528</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Type show domain">
+      <created>1671832641045</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671832641045</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Tag domain">
+      <created>1671832691517</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671832691517</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Circus domain">
+      <created>1671832838781</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671832838781</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +133,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Role user domain" />
+    <MESSAGE value="Type show domain" />
+    <MESSAGE value="Tag domain" />
+    <MESSAGE value="Circus domain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Circus domain" />
   </component>
 </project>
