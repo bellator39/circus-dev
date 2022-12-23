@@ -7,7 +7,7 @@ import lombok.*;
 @Data
 @EqualsAndHashCode
 @ToString
-public class RoleUser {
+public class TypeShow {
     private Long id;
-    private String nameRole;
+    private String typeShowname;
 }
