@@ -12,6 +12,6 @@ import java.time.LocalDateTime;
 public class Ticket {
     private Long id;
     private Long idShow;
-    private Long idUser;
+    private Long idCustomer;
     private LocalDateTime dateBuy;
 }

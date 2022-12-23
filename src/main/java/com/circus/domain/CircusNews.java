@@ -15,5 +15,5 @@ public class CircusNews {
     private String newsText;
     private LocalDateTime date_publication;
     private Long idAuthor;
-    private TagNews tagNews;
+    private Long tagNews;
 }

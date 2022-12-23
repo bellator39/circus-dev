@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Circus domain">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Ticket.java" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Init script for create database">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/Circus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Circus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/CircusNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/CircusNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +42,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "spring.configuration.checksum": "a3a5bc191d9a1b5be0a7a8dfc1b8fb9d"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a3a5bc191d9a1b5be0a7a8dfc1b8fb9d&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AppCircus" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="circus-dev" />
@@ -64,6 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AppCircus" />
         <item itemvalue="Spring Boot.AppCircus" />
       </list>
     </recent_temporary>
@@ -137,6 +144,7 @@
     <MESSAGE value="Type show domain" />
     <MESSAGE value="Tag domain" />
     <MESSAGE value="Circus domain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Circus domain" />
+    <MESSAGE value="Init script for create database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init script for create database" />
   </component>
 </project>

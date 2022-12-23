@@ -17,5 +17,5 @@ public class Circus {
     private Integer countAvailableTicket;
     private LocalDateTime dateShow;
     private Float priceShow;
-    private TypeShow typeShow;
+    private Long typeShow;
 }
