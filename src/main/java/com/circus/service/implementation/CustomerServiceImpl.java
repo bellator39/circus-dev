@@ -6,12 +6,15 @@ import com.circus.repository.api.CustomerRepositoryApi;
 import com.circus.service.api.CustomerServiceApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -81,6 +84,17 @@ public class CustomerServiceImpl implements CustomerServiceApi {
         }else{
             log.error("Cannot get customer by username, equals null in {}",new Date());
             return null;
+        }
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Optional<Customer> optionalCustomer = Optional.ofNullable
+                (customerRepository.findCustomerByUsername(username));
+        if(optionalCustomer.isPresent()){
+            return optionalCustomer.get();
+        }else{
+            throw new UsernameNotFoundException("Customer with username not found");
         }
     }
 }
