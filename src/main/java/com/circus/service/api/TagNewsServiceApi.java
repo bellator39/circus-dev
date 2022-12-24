@@ -1,4 +1,4 @@
-package com.circus.service;
+package com.circus.service.api;
 
 import com.circus.domain.TagNews;
 
