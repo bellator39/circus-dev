@@ -1,7 +1,7 @@
 package com.circus.repository.implementation;
 
 import com.circus.domain.Contacts;
-import com.circus.repository.api.ContactRepository;
+ import com.circus.repository.api.ContactRepositoryApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataAccessException;
@@ -15,7 +15,7 @@ import java.util.List;
 @Repository
 @Slf4j
 @RequiredArgsConstructor
-public class ContactRepositoryImpl implements ContactRepository {
+public class ContactRepositoryImpl implements ContactRepositoryApi {
 
     private final JdbcTemplate dataBase;
 
