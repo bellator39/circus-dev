@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Circus news repository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/TicketRepositoryApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TicketRepositoryImpl.java" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Ticket repository">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CircusShowRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusShowRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TeamRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <updated>1671815405693</updated>
       <workItem from="1671815407089" duration="365000" />
       <workItem from="1671831884039" duration="1016000" />
-      <workItem from="1671875386054" duration="3217000" />
+      <workItem from="1671875386054" duration="4032000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -161,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671877689109</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ticket repository">
+      <created>1671878673089</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671878673089</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +196,7 @@
     <MESSAGE value="Tag news repository" />
     <MESSAGE value="Circus team repository" />
     <MESSAGE value="Circus news repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Circus news repository" />
+    <MESSAGE value="Ticket repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ticket repository" />
   </component>
 </project>
