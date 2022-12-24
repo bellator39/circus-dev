@@ -27,7 +27,8 @@ public class CircusNewsServiceImpl implements CircusNewsServiceApi {
 
     @Override
     public boolean saveCircusNews(CircusNews circusNewsSave) {
-        if(circusNewsSave!=null){
+        CircusNews circusNews = circusNewsRepository.findAllCircusNews().stream().filter(o1->o1.getNewsName().equals(circusNewsSave.getNewsName())).findFirst().orElse(null);
+        if(circusNewsSave!=null && circusNews==null){
             circusNewsSave.setDate_publication(LocalDateTime.of(LocalDate.now(), LocalTime.now()));
             log.info("Save circus news with service, with name {} in {}",circusNewsSave.getNewsName(),new Date());
             return circusNewsRepository.saveCircusNews(circusNewsSave);
