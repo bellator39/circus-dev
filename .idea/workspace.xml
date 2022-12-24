@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Ticket repository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CircusShowRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusShowRepositoryImpl.java" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Circus show repository">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CustomerRepositoryApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CustomerRepositoryApiImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CircusNewsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CircusNewsRepositoryApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CircusShowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CircusShowRepositoryApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusNewsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusNewsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusShowRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusShowRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +92,7 @@
       <updated>1671815405693</updated>
       <workItem from="1671815407089" duration="365000" />
       <workItem from="1671831884039" duration="1016000" />
-      <workItem from="1671875386054" duration="4032000" />
+      <workItem from="1671875386054" duration="5763000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -167,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671878673089</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Circus show repository">
+      <created>1671879432172</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671879432172</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +208,7 @@
     <MESSAGE value="Circus team repository" />
     <MESSAGE value="Circus news repository" />
     <MESSAGE value="Ticket repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ticket repository" />
+    <MESSAGE value="Circus show repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Circus show repository" />
   </component>
 </project>

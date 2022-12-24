@@ -3,7 +3,7 @@ package com.circus.repository.implementation;
  import com.circus.domain.CircusNews;
  import com.circus.domain.Contacts;
  import com.circus.domain.TagNews;
- import com.circus.repository.api.CircusNewsApi;
+ import com.circus.repository.api.CircusNewsRepositoryApi;
  import lombok.RequiredArgsConstructor;
  import lombok.extern.slf4j.Slf4j;
  import org.springframework.dao.DataAccessException;
@@ -18,7 +18,7 @@ package com.circus.repository.implementation;
 @Repository
 @Slf4j
 @RequiredArgsConstructor
-public class CircusNewsImpl implements CircusNewsApi {
+public class CircusNewsImpl implements CircusNewsRepositoryApi {
 
     private final JdbcTemplate database;
 

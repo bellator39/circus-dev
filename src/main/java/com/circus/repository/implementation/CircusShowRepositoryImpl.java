@@ -2,7 +2,8 @@ package com.circus.repository.implementation;
 
 import com.circus.domain.Circus;
 import com.circus.domain.TypeShow;
-import com.circus.repository.api.CircusShowRepository;
+import com.circus.repository.api.CircusShowRepositoryApi;
+import com.circus.repository.api.CircusShowRepositoryApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataAccessException;
@@ -16,7 +17,7 @@ import java.util.List;
 @Repository
 @Slf4j
 @RequiredArgsConstructor
-public class CircusShowRepositoryImpl implements CircusShowRepository {
+public class CircusShowRepositoryImpl implements CircusShowRepositoryApi {
 
     private final JdbcTemplate database;
 
@@ -26,7 +27,8 @@ public class CircusShowRepositoryImpl implements CircusShowRepository {
     private final static String GET_CIRCUS_SHOW_BY_ID = "select * from circusshow where id=?";
     private final static String FIND_ALL_CIRCUS_SHOW = "select * from circusshow";
     private final static String DELETE_CIRCUS_SHOW = "delete from circusshow where id =?";
-    private final static String FIND_ALL_CIRCUS_SHOW_BY_TYPE_SHOW = "select * from circusshow typeshow=?";
+    private final static String FIND_ALL_CIRCUS_SHOW_BY_TYPE_SHOW = "select * from circusshow where typeshow=?";
+    private final static String FIND_ALL_CIRCUS_SHOW_BY_NAME = "select * from circusshow where name like ?";
 
     @Override
     public boolean saveCircusShow(Circus circusSave) {
@@ -69,5 +71,11 @@ public class CircusShowRepositoryImpl implements CircusShowRepository {
     public List<Circus> findAllCircusShowByTypeShow(TypeShow typeShow) {
         log.info("Get all circus bv type {} in {}",typeShow.getTypeShowname(),new Date());
         return database.query(FIND_ALL_CIRCUS_SHOW_BY_TYPE_SHOW,new BeanPropertyRowMapper<>(Circus.class),typeShow.getId());
+    }
+
+    @Override
+    public List<Circus> findAllByName(String name) {
+        String pattern = "%"+name+"%";
+        return database.query(FIND_ALL_CIRCUS_SHOW_BY_NAME,new BeanPropertyRowMapper<>(Circus.class),pattern);
     }
 }

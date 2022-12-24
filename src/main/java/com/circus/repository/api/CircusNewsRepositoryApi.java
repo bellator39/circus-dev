@@ -6,7 +6,7 @@ import com.circus.domain.TagNews;
 
 import java.util.List;
 
-public interface CircusNewsApi {
+public interface CircusNewsRepositoryApi {
     boolean saveCircusNews(CircusNews circusNewsSave);
     boolean updateCircusNews(CircusNews circusNewsUpdate);
     CircusNews getCircusNewsById(Long idCircusNews);
