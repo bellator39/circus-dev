@@ -6,6 +6,7 @@ import com.circus.repository.api.CustomerRepositoryApi;
 import com.circus.service.api.CustomerServiceApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -18,12 +19,13 @@ import java.util.List;
 public class CustomerServiceImpl implements CustomerServiceApi {
 
     private final CustomerRepositoryApi customerRepository;
-
+    private final BCryptPasswordEncoder passwordEncoder;
     @Override
     public boolean saveCustomer(Customer customerSave) {
         Customer customer = customerRepository.findCustomerByUsername(customerSave.getUsername());
         if(customer==null){
             log.info("Save customer with service, name {} in {}",customerSave.getName(),new Date());
+            customerSave.setPassword(passwordEncoder.encode(customerSave.getPassword()));
             customerSave.setDate_registration(LocalDateTime.now());
             return customerRepository.saveCustomer(customerSave);
         }else{
