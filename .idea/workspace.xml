@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Circus show repository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CustomerRepositoryApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CustomerRepositoryApiImpl.java" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Customer repository">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/CircusNewsServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/CircusShowServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/ContactServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/CustomerServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/TagNewsServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/TeamServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/TicketServiceApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CircusNewsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CircusNewsRepositoryApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CircusShowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/api/CircusShowRepositoryApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusNewsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusNewsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusShowRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusShowRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,24 +44,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a3a5bc191d9a1b5be0a7a8dfc1b8fb9d&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "U:/Work/Circus/circus-dev/circus-dev/src/main/java/com/circus/service",
+    "spring.configuration.checksum": "a3a5bc191d9a1b5be0a7a8dfc1b8fb9d"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\java\com\circus\service" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="AppCircus" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="circus-dev" />
