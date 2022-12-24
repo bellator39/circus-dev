@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Services api">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/TagNewsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/CircusNewsServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/CircusNewsServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/CircusShowServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/CircusShowServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/ContactServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/ContactServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/CustomerServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/CustomerServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/TagNewsServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/TagNewsServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/TeamServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/TeamServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/TicketServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/TicketServiceApi.java" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Tag news services">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TeamServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/TagNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TagNewsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +94,7 @@
       <workItem from="1671815407089" duration="365000" />
       <workItem from="1671831884039" duration="1016000" />
       <workItem from="1671875386054" duration="5763000" />
-      <workItem from="1671890153224" duration="494000" />
+      <workItem from="1671890153224" duration="961000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -193,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671890196838</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Tag news services">
+      <created>1671890662545</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671890662545</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +226,7 @@
     <MESSAGE value="Ticket repository" />
     <MESSAGE value="Circus show repository" />
     <MESSAGE value="Services api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Services api" />
+    <MESSAGE value="Tag news services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tag news services" />
   </component>
 </project>
