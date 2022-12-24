@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Team circus service">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/CircusNewsServiceImpl.java" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Circus news service">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/ContactServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/CircusNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/CircusNewsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,7 @@
       <workItem from="1671815407089" duration="365000" />
       <workItem from="1671831884039" duration="1016000" />
       <workItem from="1671875386054" duration="5763000" />
-      <workItem from="1671890153224" duration="1431000" />
+      <workItem from="1671890153224" duration="1796000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -200,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671891126651</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Circus news service">
+      <created>1671891594005</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671891594005</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +242,7 @@
     <MESSAGE value="Services api" />
     <MESSAGE value="Tag news services" />
     <MESSAGE value="Team circus service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Team circus service" />
+    <MESSAGE value="Circus news service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Circus news service" />
   </component>
 </project>

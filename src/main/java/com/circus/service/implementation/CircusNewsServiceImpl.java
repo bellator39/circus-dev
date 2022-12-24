@@ -10,6 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Date;
 import java.util.List;
 
@@ -25,6 +28,7 @@ public class CircusNewsServiceImpl implements CircusNewsServiceApi {
     @Override
     public boolean saveCircusNews(CircusNews circusNewsSave) {
         if(circusNewsSave!=null){
+            circusNewsSave.setDate_publication(LocalDateTime.of(LocalDate.now(), LocalTime.now()));
             log.info("Save circus news with service, with name {} in {}",circusNewsSave.getNewsName(),new Date());
             return circusNewsRepository.saveCircusNews(circusNewsSave);
         }else{
