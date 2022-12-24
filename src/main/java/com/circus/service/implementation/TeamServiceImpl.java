@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -20,6 +21,7 @@ public class TeamServiceImpl implements TeamServiceApi {
     @Override
     public boolean saveTeam(TeamCircus teamCircusSave) {
         if(teamCircusSave!=null){
+            teamCircusSave.setDate_create(LocalDateTime.now());
             log.info("Save team circus with service, name {} in {}",teamCircusSave.getName(), new Date());
             return teamRepository.saveTeam(teamCircusSave);
         }else{
