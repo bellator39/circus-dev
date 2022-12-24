@@ -14,6 +14,7 @@ import java.util.Collections;
 @Data
 @EqualsAndHashCode
 @ToString
+@Builder
 public class Customer implements UserDetails {
     private Long id;
     private String name;
@@ -21,12 +22,13 @@ public class Customer implements UserDetails {
     private String username;
     private String password;
     private String email;
-    private RoleUser role;
+    private RoleUser rolename;
     private LocalDateTime date_registration;
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.singleton(getRole());
+        return Collections.singleton(getRolename());
     }
 
     @Override
@@ -47,5 +49,12 @@ public class Customer implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+    public String getPassword() {
+        return password;
     }
 }

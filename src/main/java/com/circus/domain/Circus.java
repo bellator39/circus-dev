@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 @Data
 @EqualsAndHashCode
 @ToString
+@Builder
 public class Circus {
     private Long id;
     private String name;

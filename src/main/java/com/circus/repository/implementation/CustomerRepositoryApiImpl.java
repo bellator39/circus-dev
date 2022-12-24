@@ -33,14 +33,14 @@ public class CustomerRepositoryApiImpl implements CustomerRepositoryApi {
     public boolean saveCustomer(Customer customerSave) {
         log.info("Save customer with name {} in {}",customerSave.getName() + " " + customerSave.getSoname(),new Date());
         return database.update(SAVE_CUSTOMER,customerSave.getName(),customerSave.getSoname(),customerSave.getUsername(),customerSave.getPassword(),
-                customerSave.getEmail(),customerSave.getRole(),customerSave.getDate_registration())>0;
+                customerSave.getEmail(),customerSave.getRolename().name(),customerSave.getDate_registration())>0;
     }
 
     @Override
     public boolean updateCustomer(Customer customerUpdate) {
         log.info("Update customer with id {} in {}",customerUpdate.getId(),new Date());
         return database.update(UPDATE_CUSTOMER,customerUpdate.getName(),customerUpdate.getSoname(),customerUpdate.getUsername(),customerUpdate.getPassword(),
-                customerUpdate.getEmail(),customerUpdate.getRole(),customerUpdate.getId())>0;
+                customerUpdate.getEmail(),customerUpdate.getRolename(),customerUpdate.getId())>0;
     }
 
     @Override

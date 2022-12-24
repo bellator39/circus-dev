@@ -2,6 +2,7 @@ package com.circus.service.implementation;
 
 
 import com.circus.domain.Customer;
+import com.circus.domain.RoleUser;
 import com.circus.repository.api.CustomerRepositoryApi;
 import com.circus.service.api.CustomerServiceApi;
 import lombok.RequiredArgsConstructor;
@@ -29,6 +30,7 @@ public class CustomerServiceImpl implements CustomerServiceApi {
         if(customer==null){
             log.info("Save customer with service, name {} in {}",customerSave.getName(),new Date());
             customerSave.setPassword(passwordEncoder.encode(customerSave.getPassword()));
+            customerSave.setRolename(RoleUser.CUSTOMER);
             customerSave.setDate_registration(LocalDateTime.now());
             return customerRepository.saveCustomer(customerSave);
         }else{

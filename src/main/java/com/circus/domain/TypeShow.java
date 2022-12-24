@@ -7,6 +7,7 @@ import lombok.*;
 @Data
 @EqualsAndHashCode
 @ToString
+@Builder
 public class TypeShow {
     private Long id;
     private String typeShowname;
