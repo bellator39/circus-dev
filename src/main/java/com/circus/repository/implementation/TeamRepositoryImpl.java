@@ -16,7 +16,7 @@ import java.util.List;
 @Repository
 @Slf4j
 @RequiredArgsConstructor
-public class TeamRepository implements TeamRepositoryApi {
+public class TeamRepositoryImpl implements TeamRepositoryApi {
 
     private final JdbcTemplate database;
 
