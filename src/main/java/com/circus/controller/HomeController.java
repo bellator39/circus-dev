@@ -3,6 +3,7 @@ package com.circus.controller;
 import com.circus.service.api.CircusNewsServiceApi;
 import com.circus.service.api.CircusShowServiceApi;
 import com.circus.service.api.TagNewsServiceApi;
+import com.circus.service.api.TeamServiceApi;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +19,7 @@ public class HomeController {
     private final CircusShowServiceApi circusShowService;
     private final CircusNewsServiceApi circusNewsService;
     private final TagNewsServiceApi tagNewsService;
+    private final TeamServiceApi teamService;
     @GetMapping("/")
     public String home(Model model){
         model.addAttribute("circusShow",circusShowService.findAllCircusShow());
@@ -27,7 +29,8 @@ public class HomeController {
     }
 
     @GetMapping("/aboutus")
-    public String about(){
+    public String about(Model model){
+        model.addAttribute("teams",teamService.findAllTeam());
         return "aboutus";
     }
 }

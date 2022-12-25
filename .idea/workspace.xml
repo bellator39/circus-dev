@@ -4,26 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add home page">
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Home page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/CircusNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/CircusNews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusNewsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusNewsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/TeamCircus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/TeamCircus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TeamRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TeamRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database/initData.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/initData.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/publicpage/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/baker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/baker.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/bakery.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/bakery.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/breadcookies.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/ceo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/ceo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/main-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/thebakery.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/thebakery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/badge.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/badge.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/badge1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/badge1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/badge2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/badge2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/aboutus.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/aboutus.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +118,7 @@
       <workItem from="1671890153224" duration="3904000" />
       <workItem from="1671910157212" duration="3933000" />
       <workItem from="1671966864568" duration="600000" />
-      <workItem from="1671997154663" duration="4912000" />
+      <workItem from="1671997154663" duration="6981000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -283,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671895415907</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Home page">
+      <created>1672002088667</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1672002088667</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +323,7 @@
     <MESSAGE value="Implement userdetails and grantedauthorities" />
     <MESSAGE value="Implement user details service" />
     <MESSAGE value="Implement login and registration customer with forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement login and registration customer with forms" />
+    <MESSAGE value="Home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home page" />
   </component>
 </project>

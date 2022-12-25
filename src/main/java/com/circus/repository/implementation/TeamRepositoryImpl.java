@@ -20,8 +20,8 @@ public class TeamRepositoryImpl implements TeamRepositoryApi {
 
     private final JdbcTemplate database;
 
-    private final static String SAVE_TEAM = "insert into circusteam(name, soname, work_position, describe, link_facebook, date_create) " +
-            "values(?,?,?,?,?,?)";
+    private final static String SAVE_TEAM = "insert into circusteam(name, soname, work_position, describe, link_facebook, date_create,urlphoto) " +
+            "values(?,?,?,?,?,?,?)";
     private final static String UPDATE_TEAM = "update circusteam set name=?,soname=?,work_position=?,describe=?,link_facebook=? where id=?";
     private final static String GET_TEAM_BY_ID = "select * from circusteam where id=?";
     private final static String FIND_ALL_TEAM= "select * from circusteam";
@@ -30,7 +30,7 @@ public class TeamRepositoryImpl implements TeamRepositoryApi {
     public boolean saveTeam(TeamCircus teamCircusSave) {
         log.info("Save team circus with name {} in {}",teamCircusSave.getSoname() + " " + teamCircusSave.getName(),new Date());
         return database.update(SAVE_TEAM,teamCircusSave.getName(),teamCircusSave.getSoname(),teamCircusSave.getWork_position(),teamCircusSave.getDescribe(),
-                teamCircusSave.getLink_facebook(),teamCircusSave.getDate_create())>0;
+                teamCircusSave.getLink_facebook(),teamCircusSave.getDate_create(),teamCircusSave.getUrlphoto())>0;
     }
 
     @Override

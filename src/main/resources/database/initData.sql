@@ -210,3 +210,39 @@ SELECT 786,
             SELECT id FROM circusnews WHERE id = 786
         );
 
+INSERT INTO circusteam
+(id, name, soname, work_position, describe, link_facebook, date_create,urlphoto)
+SELECT 2, 'Альгердо','Витаутас','Художественный руководитель','Доброжелателен и сдержан, всегда готов к мирному урегулированию конфликта. Вредные привычки отсутствуют. Регулярно участвует в общественной жизни коллектива.',
+       'facebook.com','2005-05-05','https://circus.by/wp-content/uploads/2017/08/14-2.jpg'
+    WHERE
+    NOT EXISTS (
+            SELECT id FROM circusteam WHERE id = 2
+        );
+
+INSERT INTO circusteam
+(id, name, soname, work_position, describe, link_facebook, date_create,urlphoto)
+SELECT 3, 'Алла','Николаева-Алиева','Главный режиссер','Доброжелателена и сдержана, всегда готова к мирному урегулированию конфликта. Вредные привычки отсутствуют. Регулярно участвует в общественной жизни коллектива.',
+       'facebook.com','2007-07-07','https://circus.by/wp-content/uploads/2017/08/ico1008.jpg'
+    WHERE
+    NOT EXISTS (
+            SELECT id FROM circusteam WHERE id = 3
+        );
+
+INSERT INTO circusteam
+(id, name, soname, work_position, describe, link_facebook, date_create,urlphoto)
+SELECT 4, 'Елена','Батян','Балетмейстер','Доброжелателена и сдержана, всегда готова к мирному урегулированию конфликта. Вредные привычки отсутствуют. Регулярно участвует в общественной жизни коллектива.',
+       'facebook.com','2008-07-08','https://circus.by/wp-content/uploads/2017/08/ico493.jpg'
+    WHERE
+    NOT EXISTS (
+            SELECT id FROM circusteam WHERE id = 4
+        );
+
+INSERT INTO circusteam
+(id, name, soname, work_position, describe, link_facebook, date_create,urlphoto)
+SELECT 5, 'Василий','Уманец','Инспектор манежа','Доброжелателен и сдержан, всегда готов к мирному урегулированию конфликта. Вредные привычки отсутствуют. Регулярно участвует в общественной жизни коллектива.',
+       'facebook.com','2009-07-09','https://circus.by/wp-content/uploads/2017/08/ico804.jpg'
+    WHERE
+    NOT EXISTS (
+            SELECT id FROM circusteam WHERE id = 5
+        );
+

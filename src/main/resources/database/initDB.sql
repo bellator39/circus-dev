@@ -59,7 +59,8 @@ create table if not exists circusteam(
                            work_position varchar(256),
                            describe varchar(256),
                            link_facebook varchar(1024),
-                           date_create date
+                           date_create date,
+    urlphoto varchar
 );
 
 create table if not exists contact(

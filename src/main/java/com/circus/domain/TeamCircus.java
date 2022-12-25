@@ -18,4 +18,5 @@ public class TeamCircus {
     private String describe;
     private String link_facebook;
     private LocalDateTime date_create;
+    private String urlphoto;
 }
