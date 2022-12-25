@@ -22,7 +22,7 @@ public class CircusNewsImpl implements CircusNewsRepositoryApi {
 
     private final JdbcTemplate database;
 
-    private final static String SAVE_CIRCUS_NEWS="insert into circusnews(newsname, newstext, date_publication, idauthor, tagnews)" +
+    private final static String SAVE_CIRCUS_NEWS="insert into circusnews(newsname, newstext, date_publication, idauthor, tagnews,urllogonews)" +
             "values(?,?,?,?,?)";
     private final static String UPDATE_CIRCUS_NEWS="update circusnews set newsname=?,newstext=?,tagnews=? where id=?";
     private final static String GET_BY_ID_CIRCUS_NEWS="select * from circusnews where id =?";
@@ -37,7 +37,7 @@ public class CircusNewsImpl implements CircusNewsRepositoryApi {
     public boolean saveCircusNews(CircusNews circusNewsSave) {
         log.info("Save circus news with name {} in {}",circusNewsSave.getNewsName(),new Date());
         return database.update(SAVE_CIRCUS_NEWS,circusNewsSave.getNewsName(),circusNewsSave.getNewsText(),circusNewsSave.getDate_publication(),
-                circusNewsSave.getIdAuthor(),circusNewsSave.getTagNews())>0;
+                circusNewsSave.getIdAuthor(),circusNewsSave.getTagNews(),circusNewsSave.getUrllogonews())>0;
     }
 
     @Override

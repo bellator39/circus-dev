@@ -30,6 +30,7 @@ create table if not exists circusnews(
                            newsText varchar(1200),
                            date_publication date,
                            idAuthor int,
+                            urllogonews varchar(500),
                            tagNews int REFERENCES tagnews(id) on delete cascade
 );
 

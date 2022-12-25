@@ -623,7 +623,7 @@ abbr {
   color: #212121 !important;
 }
 .colored h1 {
-  color: #ce3c83 !important; 
+  color: #4DB6AC !important;
 }
 .color-primary {
   color: #151515;
@@ -685,7 +685,6 @@ img:hover.grayscale {
   color: #ff9697;
 }
 .text-hide {
-  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -763,7 +762,8 @@ img.align-center,
 /* - Image Sizes
 ------------------------------------------------------------- */
 img.largeImg {
-    width: 580px; /* Latest Blog in Home Page */
+    width: 300px;
+  height: 300px;/* Latest Blog in Home Page */
 }
 img.horizontalImg {
     width: 580px; /* Latest Blog in Home Page */
@@ -1032,7 +1032,7 @@ fieldset[disabled] .form-control {
 textarea {
   overflow: auto;
   padding: 12px;
-  min-height: none;
+
   vertical-align: top;
 }
 input[type="search"] {
@@ -6273,7 +6273,7 @@ tfoot {
     line-height: 2.2;
 }
 .action-menu .icon.icon-shopping-cart:hover {
-    color: # class="light";
+
     text-decoration: none;
 }
 .action-menu .shopping-cart a{
@@ -6440,7 +6440,7 @@ a.nav-link {
 /* -- Special Chocolate Section
 --------------------------------------------------------------*/
 .special-items{
-  background: url(/static/publicpage/images/special-item.jpg) no-repeat;
+  background: url(/static/publicpage/images/special_pred.jpg) no-repeat;
 }
 .special-items .item-content {
     display: flex;
@@ -6493,7 +6493,7 @@ a.magnific-popup:hover .overlay {
 /* -- Testimonial Section
 --------------------------------------------------------------*/
 .testimonials-wrap{
-    background: url(/static/publicpage/images/testimonial-bg.jpg);
+    background: url(/static/publicpage/images/testimonals.jpg);
     background-size: cover;
 }
 .testimonials-wrap .reviews-content{
@@ -6604,7 +6604,7 @@ a.magnific-popup:hover .overlay {
 /* - Page Banner Section
 --------------------------------------------------------------*/
 .site-banner{
-   background: url(images/banner.jpg) no-repeat; 
+   background: url(/static/publicpage/images/special_pred.jpg) no-repeat;
    height: 567px;
 }
 .site-banner .banner-content {

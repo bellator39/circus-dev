@@ -11,6 +11,8 @@
         <meta name="author" content="">
         <meta name="keywords" content="">
         <meta name="description" content="">
+        <link type="image/png" sizes="16x16" rel="icon" href="/static/publicpage/images/brand3.png">
+
         <link rel="stylesheet" type="text/css" href="/static/publicpage/fonts/icomoon/icomoon.css">
         <link rel="stylesheet" type="text/css" href="/static/publicpage/css/slick.css"/>
         <link rel="stylesheet" type="text/css" href="/static/publicpage/css/slick-theme.css"/>
