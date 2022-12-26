@@ -1,6 +1,7 @@
 package com.circus.controller;
 
 
+import com.circus.domain.TypeShow;
 import com.circus.service.api.CircusShowServiceApi;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -32,6 +33,16 @@ public class CircusShowController {
     @PostMapping("/circusshow/find")
     public String circuShowFind(@RequestParam("name")String name,Model model){
         model.addAttribute("circusShow",circusShowService.findAllByName(name));
+        return "circusshowlist";
+    }
+
+    @GetMapping("/circusshow/type/{typeId}")
+    public String circusShowByType(@PathVariable("typeId")Long typeId, Model model){
+        TypeShow typeShow = TypeShow.builder()
+                .id(typeId)
+                .build();
+        model.addAttribute("circusShow",circusShowService.findAllCircusShowByTypeShow(typeShow));
+
         return "circusshowlist";
     }
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Circus show single">
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Find news by name">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/CircusShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/CircusShowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
     </list>
@@ -113,7 +113,7 @@
       <workItem from="1671910157212" duration="3933000" />
       <workItem from="1671966864568" duration="600000" />
       <workItem from="1671997154663" duration="8313000" />
-      <workItem from="1672013951855" duration="3771000" />
+      <workItem from="1672013951855" duration="4099000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -332,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672017611165</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Find news by name">
+      <created>1672017763967</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1672017763967</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,10 +378,10 @@
     <MESSAGE value="Contact us page" />
     <MESSAGE value="Circus news page" />
     <MESSAGE value="News single page" />
-    <MESSAGE value="Find news by name" />
     <MESSAGE value="Gallery page" />
     <MESSAGE value="Circus show list page" />
     <MESSAGE value="Circus show single" />
-    <option name="LAST_COMMIT_MESSAGE" value="Circus show single" />
+    <MESSAGE value="Find news by name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Find news by name" />
   </component>
 </project>

@@ -80,9 +80,9 @@
                                         <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Каталог событий</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="/circusshow" class="dropdown-item">Полный каталог</a></li>
-                                            <li><a href="/circus/news" class="dropdown-item">Blog</a></li>
-                                            <li><a href="single-post.html" class="dropdown-item">Single Post</a></li>
-                                            <li><a href="/contactus" class="dropdown-item">Contact us</a></li>
+                                            <li><a href="/circusshow/type/1" class="dropdown-item">Животные</a></li>
+                                            <li><a href="/circusshow/type/2" class="dropdown-item">Музыкальные</a></li>
+                                            <li><a href="/circusshow/type/3" class="dropdown-item">Огненные</a></li>
                                         </ul>
                                     </li>
 
