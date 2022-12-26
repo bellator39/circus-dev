@@ -349,11 +349,11 @@
                     <#list lastnews as ln>
                         <div class="col-md-6 left-post pl-0 mb-3">
                             <div class="post-content">
-                                <a href="single-post.html"><img src="${ln.urllogonews}" alt="cake"
+                                <a href="/circus/news/${ln.id}"><img src="${ln.urllogonews}" alt="cake"
                                                                 class="largeImg"></a>
                                 <div class="content light">
                                     <span class="highlight">${ln.date_publication}</span>
-                                    <h3 class="mt-3"><a href="single-post.html">${ln.newsName} |
+                                    <h3 class="mt-3"><a href="/circus/news/${ln.id}">${ln.newsName} |
                                             <#if ln.tagNews==1>
                                                 ОБЩЕЕ
                                             </#if>

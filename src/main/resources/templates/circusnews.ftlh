@@ -24,7 +24,7 @@
                 <#if news?size gt 0>
                     <#list news as ns>
                         <div class="col-md-4 mb-5">
-                            <a href="single-post.html">
+                            <a href="/circus/news/${ns.id}">
                                 <img src="${ns.urllogonews}" alt="blog" class="postImg mb-3">
                             </a>
                             <div class="content">
@@ -33,7 +33,7 @@
                                     <span><i class="icon icon-envelope-o mr-2"></i>Новости</span>
                                 </div><!--meta-tags-->
 
-                                <h2 class="post-title"><a href="single-post.html">${ns.newsName}</a></h2>
+                                <h2 class="post-title"><a href="/circus/news/${ns.id}"">${ns.newsName}</a></h2>
                                 <p>Тег: <#if ns.tagNews==1>
                                         ОБЩЕЕ
                                     </#if>
@@ -48,7 +48,7 @@
                                     </#if></p>
 
                                 <div class="pix_btn">
-                                    <a href="single-post.html" class="btn-hvr-effects mt-3">Подробнее</a>
+                                    <a href="/circus/news/${ns.id}" class="btn-hvr-effects mt-3">Подробнее</a>
                                 </div>
                             </div><!--content-->
                         </div><!--col-md-4-->

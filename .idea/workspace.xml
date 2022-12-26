@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Contact us page">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/CircusNewsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/circusnews.ftlh" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Circus news page">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/circusnewssingle.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/CircusNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/CircusNewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/circusnews.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/circusnews.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +115,7 @@
       <workItem from="1671910157212" duration="3933000" />
       <workItem from="1671966864568" duration="600000" />
       <workItem from="1671997154663" duration="8313000" />
-      <workItem from="1672013951855" duration="696000" />
+      <workItem from="1672013951855" duration="2082000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -291,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672005108516</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Circus news page">
+      <created>1672014932612</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1672014932612</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +317,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Type show domain" />
     <MESSAGE value="Tag domain" />
     <MESSAGE value="Circus domain" />
     <MESSAGE value="Init script for create database" />
@@ -334,6 +341,7 @@
     <MESSAGE value="Home page" />
     <MESSAGE value="About us page" />
     <MESSAGE value="Contact us page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contact us page" />
+    <MESSAGE value="Circus news page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Circus news page" />
   </component>
 </project>
