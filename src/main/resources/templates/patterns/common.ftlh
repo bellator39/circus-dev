@@ -72,17 +72,15 @@
                                 <ul class="navbar-nav list-inline text-uppercase">
                                     <li class="nav-item text-hover active"><a href="/" class="nav-link" data-effect="Home">Главная</a></li>
                                     <li class="nav-item text-hover"><a href="/aboutus" class="nav-link" data-effect="About Us">О нас</a></li>
-                                    <li class="nav-item text-hover"><a href="blog.html" class="nav-link" data-effect="Blogs">Новости</a></li>
-                                    <li class="nav-item text-hover"><a href="contact.html" class="nav-link" data-effect="Contact">Контакты</a></li>
+                                    <li class="nav-item text-hover"><a href="/circus/news" class="nav-link" data-effect="Blogs">Новости</a></li>
+                                    <li class="nav-item text-hover"><a href="/contactus" class="nav-link" data-effect="Contact">Контакты</a></li>
                                     <li class="nav-item dropdown">
                                         <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Каталог событий</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="/aboutus" class="dropdown-item">About us</a></li>
-                                            <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                                            <li><a href="/circus/news" class="dropdown-item">Blog</a></li>
                                             <li><a href="single-post.html" class="dropdown-item">Single Post</a></li>
-                                            <li><a href="contact.html" class="dropdown-item">Contact us</a></li>
-                                            <li><a href="shop.html" class="dropdown-item">Shop</a></li>
-                                            <li><a href="single-product.html" class="dropdown-item">Single Product</a></li>
+                                            <li><a href="/contactus" class="dropdown-item">Contact us</a></li>
                                         </ul>
                                     </li>
 

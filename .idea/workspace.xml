@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="About us page">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/contacts.ftlh" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Contact us page">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/CircusNewsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/circusnews.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/configuration/AuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/configuration/AuthConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +95,7 @@
         <item itemvalue="Spring Boot.AppCircus" />
         <item itemvalue="Spring Boot.AppCircus" />
         <item itemvalue="Spring Boot.AppCircus" />
+        <item itemvalue="Spring Boot.AppCircus" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +113,8 @@
       <workItem from="1671890153224" duration="3904000" />
       <workItem from="1671910157212" duration="3933000" />
       <workItem from="1671966864568" duration="600000" />
-      <workItem from="1671997154663" duration="7921000" />
+      <workItem from="1671997154663" duration="8313000" />
+      <workItem from="1672013951855" duration="696000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -282,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672004207960</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Contact us page">
+      <created>1672005108516</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672005108516</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +309,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Role user domain" />
     <MESSAGE value="Type show domain" />
     <MESSAGE value="Tag domain" />
     <MESSAGE value="Circus domain" />
@@ -325,6 +333,7 @@
     <MESSAGE value="Implement login and registration customer with forms" />
     <MESSAGE value="Home page" />
     <MESSAGE value="About us page" />
-    <option name="LAST_COMMIT_MESSAGE" value="About us page" />
+    <MESSAGE value="Contact us page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact us page" />
   </component>
 </project>
