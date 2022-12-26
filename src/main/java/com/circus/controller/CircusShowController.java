@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequiredArgsConstructor
@@ -25,6 +27,12 @@ public class CircusShowController {
                                  Model model){
         model.addAttribute("circusShowCurr",circusShowService.getCircusShowById(id));
         return "circusshowsingle";
+    }
+
+    @PostMapping("/circusshow/find")
+    public String circuShowFind(@RequestParam("name")String name,Model model){
+        model.addAttribute("circusShow",circusShowService.findAllByName(name));
+        return "circusshowlist";
     }
 
 }

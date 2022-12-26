@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Circus show list page">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/circusshowsingle.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Circus show single">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/CircusShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/CircusShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +113,7 @@
       <workItem from="1671910157212" duration="3933000" />
       <workItem from="1671966864568" duration="600000" />
       <workItem from="1671997154663" duration="8313000" />
-      <workItem from="1672013951855" duration="3464000" />
+      <workItem from="1672013951855" duration="3771000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -327,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672017128706</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Circus show single">
+      <created>1672017611165</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1672017611165</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +350,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Contact repository" />
     <MESSAGE value="Tag news repository" />
     <MESSAGE value="Circus team repository" />
     <MESSAGE value="Circus news repository" />
@@ -370,6 +374,7 @@
     <MESSAGE value="Find news by name" />
     <MESSAGE value="Gallery page" />
     <MESSAGE value="Circus show list page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Circus show list page" />
+    <MESSAGE value="Circus show single" />
+    <option name="LAST_COMMIT_MESSAGE" value="Circus show single" />
   </component>
 </project>

@@ -94,8 +94,8 @@
                                     <a href="#" class="search-button search-toggle" data-selector=".navbar">
                                         <i class="icon icon-search"></i>
                                     </a>
-                                    <form role="search" method="get" class="search-box" action="">
-                                        <input class="search-field text search-input" placeholder="Поиск" type="search" style="color:black">
+                                    <form role="search" method="post" class="search-box" action="/circusshow/find">
+                                        <input name="name" class="search-field text search-input" placeholder="Поиск" type="search" style="color:black">
                                     </form>
                                 </div>
                                 <div class="shopping-cart">
