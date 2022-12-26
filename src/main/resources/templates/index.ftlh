@@ -178,10 +178,10 @@
                     <#if circusShow??>
                         <#list circusShow as cs>
                             <div class="product-item col-md-3 pl-0">
-                                <a href="single-product.html" class="product-image"><img
+                                <a href="/circusshow/${cs.id}" class="product-image"><img
                                             src="${cs.urlPathLogoPhoto}"></a>
                                 <div class="text-comtent text-center text-hover">
-                                    <h5 class="pt-4"><a href="single-product.html">${cs.name}</a></h5>
+                                    <h5 class="pt-4"><a href="/circusshow/${cs.id}">${cs.name}</a></h5>
                                     <p>Дата шоу - ${cs.dateShow}</p>
                                     <span class="price colored">$ ${cs.priceShow}</span>
                                 </div>
