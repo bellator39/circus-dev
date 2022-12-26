@@ -23,7 +23,7 @@ public class AuthConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                 .antMatchers( "/","/circusshow/**","/contactus/**","/static/**",
-                        "/aboutus","/gallery","/signup/**","/circus/news","/customer/**").permitAll()
+                        "/aboutus","/gallery","/signup/**","/circus/news/**","/customer/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()

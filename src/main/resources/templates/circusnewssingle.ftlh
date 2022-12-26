@@ -52,8 +52,10 @@
                             <div class="sidebar-box">
                                 <h3>Поиск</h3>
                                 <div class="search-box d-flex">
-                                    <input type="text" name="search" class="border" class="mt-3">
-                                    <a href="#" class="btn-search btn-hvr-effects"><i class="icon icon-search"></i></a>
+                                    <form action="/circus/news/find" method="post">
+                                    <input placeholder="Название новости" type="text" name="name" class="border" class="mt-3" required="required" minlength="4"/>
+                                        <button type="submit" class="btn-search btn-hvr-effects"><i class="icon icon-search"></i></button>
+                                    </form>
                                 </div><!--search-box-->
                             </div>
 

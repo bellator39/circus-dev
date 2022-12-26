@@ -8,6 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.stream.Collectors;
 
@@ -45,6 +47,10 @@ public class CircusNewsController {
         return "circusnews";
     }
 
-
+    @PostMapping("/circus/news/find")
+    public String findNewsByName(@RequestParam("name")String name, Model model){
+        model.addAttribute("news",circusNewsService.findAllCircusNews().stream().filter(o1->o1.getNewsName().contains(name)).collect(Collectors.toList()));
+        return "circusnews";
+    }
 
 }
