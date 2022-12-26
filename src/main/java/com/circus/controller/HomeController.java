@@ -36,6 +36,12 @@ public class HomeController {
         return "aboutus";
     }
 
+    @GetMapping("/gallery")
+    public String gallery(Model model) {
+        return "gallery";
+    }
+
+
     @GetMapping("/contactus")
     public String contactuspage(Model model) {
         return "contacts";

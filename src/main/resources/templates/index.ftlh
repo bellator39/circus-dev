@@ -268,7 +268,7 @@
                     </figure>
                 </div><!--content-->
                 <div class="pix_btn text-center m-auto">
-                    <a href="#" class="btn-hvr-effects mt-3">Открыть все</a>
+                    <a href="/gallery" class="btn-hvr-effects mt-3">Открыть все</a>
                 </div>
             </div>
         </div>

@@ -74,6 +74,8 @@
                                     <li class="nav-item text-hover"><a href="/aboutus" class="nav-link" data-effect="About Us">О нас</a></li>
                                     <li class="nav-item text-hover"><a href="/circus/news" class="nav-link" data-effect="Blogs">Новости</a></li>
                                     <li class="nav-item text-hover"><a href="/contactus" class="nav-link" data-effect="Contact">Контакты</a></li>
+                                    <li class="nav-item text-hover"><a href="/gallery" class="nav-link" data-effect="Contact">Галерея</a></li>
+
                                     <li class="nav-item dropdown">
                                         <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Каталог событий</a>
                                         <ul class="dropdown-menu">
