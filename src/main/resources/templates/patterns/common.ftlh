@@ -37,14 +37,13 @@
                     <div class="row">
                         <div class="wrap flex-container padding-small">
                             <div class="contact-block">
-                                <span class="pr-50"><i class="icon icon-phone"></i><a href="#">375333280891</a></span>
-                                <span class="color-secondary"><i class="icon icon-envelope-o"></i><a href="#"> egorgurinovich@gmail.com</a></span>
+                                <span class="pr-50"><i class="icon icon-phone"></i><a href="tel:375333280891">375333280891</a></span>
+                                <span class="color-secondary"><i class="icon icon-envelope-o"></i><a href="mailto:egorgurinovich@gmail.com"> egorgurinovich@gmail.com</a></span>
                             </div>
 
                             <div class="header-top-right">
                                 <ul class="list-unstyled d-flex color-secondary">
-                                    <li class="pr-50"><a href="#">FAQs</a></li>
-                                    <li><a href="#">Помощь</a></li>
+                                     <li><a href="/contactus">Помощь</a></li>
                                 </ul>
                             </div>
                         </div><!--flex-container-->
@@ -149,11 +148,11 @@
                                 <div class="footer-menu">
                                     <ul class="list-unstyled">
                                         <li><a href="/">Главная</a></li>
-                                        <li><a href="about.html">О нас</a></li>
-                                        <li><a href="#">Галерея</a></li>
-                                        <li><a href="#">Каталог событий</a></li>
-                                        <li><a href="blog.html">Новости</a></li>
-                                        <li><a href="contact.html">Контакты</a></li>
+                                        <li><a href="/aboutus">О нас</a></li>
+                                        <li><a href="/gallery">Галерея</a></li>
+                                        <li><a href="/circusshow">Каталог событий</a></li>
+                                        <li><a href="/circus/news">Новости</a></li>
+                                        <li><a href="/contactus">Контакты</a></li>
                                     </ul>
                                 </div>
                             </div>

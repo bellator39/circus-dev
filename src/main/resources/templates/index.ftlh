@@ -376,7 +376,7 @@
             </div>
         </div>
         <div class="pix_btn text-center">
-            <a href="#" class="btn-hvr-effects mt-5">Подробнее</a>
+            <a href="/circus/news" class="btn-hvr-effects mt-5">Подробнее</a>
         </div>
     </section>
     <section class="association-with bg-prim padding-small">
