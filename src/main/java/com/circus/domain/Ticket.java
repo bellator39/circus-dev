@@ -15,4 +15,5 @@ public class Ticket {
     private Long idShow;
     private Long idCustomer;
     private LocalDateTime dateBuy;
+    private Long countTicket;
 }

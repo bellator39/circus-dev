@@ -1,3 +1,4 @@
+<#include "security.ftlh"/>
 <#macro page>
     <!DOCTYPE html>
     <html>
@@ -25,8 +26,7 @@
 
         <link rel="stylesheet" type="text/css" href="/static/publicpage/css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="/static/publicpage/css/style.css">
-
-    </head>
+     </head>
 
     <body>
 
@@ -88,7 +88,6 @@
 
                                 </ul>
                             </div>
-
                             <div class="action-menu">
                                 <div class="searchbar">
                                     <a href="#" class="search-button search-toggle" data-selector=".navbar">
@@ -99,9 +98,11 @@
                                     </form>
                                 </div>
                                 <div class="shopping-cart">
-                                    <a href="#">
-                                        <i class="icon icon-shopping-cart"></i>
-                                    </a>
+                                    <#if user??>
+                                        <a href="/myticket/${currentUserId}">
+                                            <i class="icon icon-shopping-cart"></i>
+                                        </a>
+                                    </#if>
                                 </div>
                             </div><!--action-menu-->
 
@@ -178,8 +179,7 @@
         </div>
 
     </div>
-
-    <script src="/static/publicpage/js/jquery-1.11.0.min.js"></script>
+     <script src="/static/publicpage/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="/static/publicpage/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/static/publicpage/js/slick.min.js"></script>
     <script type="text/javascript" src="/static/publicpage/js/jquery.magnific-popup.min.js"></script>

@@ -1,4 +1,5 @@
 <#import "patterns/common.ftlh" as common>
+<#include "patterns/security.ftlh"/>
 <@common.page>
     <div class="site-banner">
         <div class="banner-content">
@@ -32,10 +33,15 @@
                         <span class="price colored">$ ${circusShowCurr.priceShow}</span>
                         <p>${circusShowCurr.describe}</p>
                         <label class="screen-reader-text" for="qty">Количество билетов:</label>
+                        <#if circusShowCurr.CompareDate() && circusShowCurr.countAvailableTicket gt 0>
+                        <form action="/ticket/buy/${circusShowCurr.id}/${currentUserId}" method="post">
                         <input type="number" id="qty" class="input-text qty text" step="1" min="1" max="10"
-                               name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric">
+                               name="count" value="1" title="Qty" size="4" placeholder="" inputmode="numeric">
                         <button type="submit" name="add-to-cart" value="27545" class="button">Оформить</button>
-
+                        </form>
+                            <#else>
+                            <p>На данный момент продажи билетов нет! Скоро мы возобновим!</p>
+                        </#if>
                     </div>
                 </div>
 

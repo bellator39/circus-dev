@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Find news by name">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/CircusShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/CircusShowController.java" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Find show by type">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/TickerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/security.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketpage.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/Circus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Circus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TicketRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TicketRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/auth/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/auth/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/circusshowsingle.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/circusshowsingle.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,26 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "U:/Work/Circus/circus-dev/circus-dev/src/main/resources/templates",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "a3a5bc191d9a1b5be0a7a8dfc1b8fb9d"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;U:/Work/Circus/circus-dev/circus-dev/src/main/resources/templates&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a3a5bc191d9a1b5be0a7a8dfc1b8fb9d&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\templates" />
@@ -114,6 +126,8 @@
       <workItem from="1671966864568" duration="600000" />
       <workItem from="1671997154663" duration="8313000" />
       <workItem from="1672013951855" duration="4099000" />
+      <workItem from="1672050035447" duration="2175000" />
+      <workItem from="1672052240171" duration="1909000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>

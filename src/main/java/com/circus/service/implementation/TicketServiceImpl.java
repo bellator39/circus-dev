@@ -33,7 +33,7 @@ public class TicketServiceImpl implements TicketServiceApi {
         ticketSave.setDateBuy(LocalDateTime.now());
         if(circusCheck!=null && customerCheck!=null){
             Integer countTicketShow =circusCheck.getCountAvailableTicket();
-            countTicketShow--;
+            countTicketShow= Math.toIntExact(countTicketShow - ticketSave.getCountTicket());
             circusCheck.setCountAvailableTicket(countTicketShow);
             circusShowService.updateCircusShow(circusCheck);
             log.info("Save ticket with service, id customer {} id show {} in {}",customerCheck.getId(),circusCheck.getId(),new Date());

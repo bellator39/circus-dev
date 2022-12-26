@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="/static/auth/css/util.css">
     <link rel="stylesheet" type="text/css" href="/static/auth/css/main.css">
 </head>
-<body>
+<body style="background-image: url()">
 
 <div class="limiter">
     <div class="container-login100">

@@ -49,7 +49,8 @@ create table if not exists tickets(
                         id serial primary key,
                         idShow int REFERENCES circusshow(id),
                         idCustomer int REFERENCES customer(id),
-                        dateBuy date
+                        dateBuy date,
+    countTicket integer
 );
 
 create table if not exists circusteam(

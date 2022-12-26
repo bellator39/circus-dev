@@ -57,4 +57,8 @@ public class Customer implements UserDetails {
     public String getPassword() {
         return password;
     }
+
+    public boolean isAdmin(){
+        return this.rolename==RoleUser.ADMIN;
+    }
 }

@@ -20,16 +20,16 @@ public class TicketRepositoryImpl implements TicketRepositoryApi {
 
     private final JdbcTemplate database;
 
-    private final static String SAVE_TICKET = "insert into tickets(idshow, idcustomer, datebuy) values(?,?,?)";
+    private final static String SAVE_TICKET = "insert into tickets(idshow, idcustomer, datebuy,\"countTicket\") values(?,?,?,?)";
     private final static String GET_TICKET_BY_ID = "select * from tickets where id=?";
     private final static String FIND_ALL_TICKET = "select * from tickets";
-    private final static String DELETE_TICKET = "delete from tickets where idcustomer=? and idshow=?";
+    private final static String DELETE_TICKET = "delete from tickets where id=?";
     private final static String FIND_ALL_TICKET_BY_CUSTOMER_ID = "select * from tickets where idcustomer=?";
 
     @Override
     public boolean saveTicket(Ticket ticketSave) {
         log.info("Save ticket with customer id {} in {}", ticketSave.getIdCustomer(), new Date());
-        return database.update(SAVE_TICKET, ticketSave.getIdShow(), ticketSave.getIdCustomer(), ticketSave.getDateBuy()) > 0;
+        return database.update(SAVE_TICKET, ticketSave.getIdShow(), ticketSave.getIdCustomer(), ticketSave.getDateBuy(),ticketSave.getCountTicket()) > 0;
     }
 
     @Override

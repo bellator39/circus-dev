@@ -1,4 +1,6 @@
+body{
 
+}
 
 
 
@@ -7,22 +9,22 @@
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  src: url('/static/auth/fonts/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  src: url('/static/auth/fonts/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  src: url('/static/auth/fonts/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  src: url('/static/auth/fonts/poppins/Poppins-SemiBold.ttf');
 }
 
 
@@ -40,6 +42,7 @@
 body, html {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
+  background-image: url(/static/publicpage/images/m_slide_1.jpg) !important;
 }
 
 /*---------------------------------------------*/
@@ -160,6 +163,8 @@ iframe {
 .limiter {
   width: 100%;
   margin: 0 auto;
+  background-image: url(/static/publicpage/images/m_slide_1.jpg) !important;
+  background-size: cover;
 }
 
 .container-login100 {
@@ -174,7 +179,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #f2f2f2;  
+
 }
 
 .wrap-login100 {
