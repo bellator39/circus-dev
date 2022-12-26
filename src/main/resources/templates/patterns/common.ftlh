@@ -79,7 +79,7 @@
                                     <li class="nav-item dropdown">
                                         <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Каталог событий</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="/aboutus" class="dropdown-item">About us</a></li>
+                                            <li><a href="/circusshow" class="dropdown-item">Полный каталог</a></li>
                                             <li><a href="/circus/news" class="dropdown-item">Blog</a></li>
                                             <li><a href="single-post.html" class="dropdown-item">Single Post</a></li>
                                             <li><a href="/contactus" class="dropdown-item">Contact us</a></li>

@@ -1,0 +1,22 @@
+package com.circus.controller;
+
+
+import com.circus.service.api.CircusShowServiceApi;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+@RequiredArgsConstructor
+public class CircusShowController {
+
+    private final CircusShowServiceApi circusShowService;
+
+    @GetMapping("/circusshow")
+    public String circusShowlist(Model model){
+        model.addAttribute("circusShow",circusShowService.findAllCircusShow());
+        return "circusshowlist";
+    }
+
+}

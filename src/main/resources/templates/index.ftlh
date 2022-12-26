@@ -273,8 +273,6 @@
             </div>
         </div>
     </section>
-
-
     <section class="testimonials-wrap padding-medium">
         <div class="container">
             <div class="row">
@@ -340,7 +338,6 @@
             </div>
         </div>
     </section>
-
     <section class="latest-blogs margin-medium">
         <h2 class="section-title text-center mb-5">Последние новости</h2>
         <div class="container">
@@ -382,7 +379,6 @@
             <a href="#" class="btn-hvr-effects mt-5">Подробнее</a>
         </div>
     </section>
-
     <section class="association-with bg-prim padding-small">
         <div class="container">
             <div class="row">
