@@ -62,4 +62,10 @@ public class ModeratorController {
         return "admin/alltestimonals";
     }
 
+    @GetMapping("/testimonals/delete/{id}")
+    public String deleteTestimonalsById(@PathVariable("id")Long id){
+        testimonalsService.deleteTestimonals(id);
+        return "redirect:/moderator/allTestimonals";
+    }
+
 }

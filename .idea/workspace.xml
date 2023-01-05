@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Testimonals service implementation">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/alltestimonals.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="All testimonals page">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +119,7 @@
       <workItem from="1672074390569" duration="3087000" />
       <workItem from="1672332579646" duration="32000" />
       <workItem from="1672925016776" duration="992000" />
-      <workItem from="1672929659789" duration="7827000" />
+      <workItem from="1672929659789" duration="8022000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -432,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672936559832</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="All testimonals page">
+      <created>1672937707163</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1672937707163</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +454,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implement userdetails and grantedauthorities" />
     <MESSAGE value="Implement user details service" />
     <MESSAGE value="Implement login and registration customer with forms" />
     <MESSAGE value="Home page" />
@@ -475,6 +478,7 @@
     <MESSAGE value="Testimonals repository implementation" />
     <MESSAGE value="Testimonals service impl" />
     <MESSAGE value="Testimonals service implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testimonals service implementation" />
+    <MESSAGE value="All testimonals page" />
+    <option name="LAST_COMMIT_MESSAGE" value="All testimonals page" />
   </component>
 </project>
