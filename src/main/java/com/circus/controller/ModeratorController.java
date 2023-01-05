@@ -54,4 +54,9 @@ public class ModeratorController {
         return "redirect:/moderator/allnews";
     }
 
+    @GetMapping("/allTestimonals")
+    public String allTestimonals(){
+        return "admin/alltestimonals";
+    }
+
 }

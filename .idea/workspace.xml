@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Delete news by id">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/editnews.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Редактирование новости">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Testimonals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allnews.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allnews.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +121,7 @@
       <workItem from="1672074390569" duration="3087000" />
       <workItem from="1672332579646" duration="32000" />
       <workItem from="1672925016776" duration="992000" />
-      <workItem from="1672929659789" duration="5382000" />
+      <workItem from="1672929659789" duration="5914000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -397,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672934062545</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Редактирование новости">
+      <created>1672935189409</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1672935189409</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +421,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Team circus service" />
     <MESSAGE value="Circus news service" />
     <MESSAGE value="Contact service" />
     <MESSAGE value="Circus show service" />
@@ -440,6 +445,7 @@
     <MESSAGE value="Java mail sender" />
     <MESSAGE value="Add all news page" />
     <MESSAGE value="Delete news by id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete news by id" />
+    <MESSAGE value="Редактирование новости" />
+    <option name="LAST_COMMIT_MESSAGE" value="Редактирование новости" />
   </component>
 </project>

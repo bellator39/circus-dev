@@ -72,3 +72,14 @@ create table if not exists contact(
     message varchar(1024),
     date_send date
 );
+
+create table testimonals
+(
+    id        serial
+        primary key,
+    name      varchar(256),
+    soname    varchar(256),
+    text      varchar,
+    rating    integer,
+    date_send date
+);
