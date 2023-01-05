@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Fix routes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add properties and dependency">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/configuration/MailConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +118,7 @@
       <workItem from="1672073149853" duration="1204000" />
       <workItem from="1672074390569" duration="3087000" />
       <workItem from="1672332579646" duration="32000" />
+      <workItem from="1672925016776" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -357,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672054818653</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Add properties and dependency">
+      <created>1672925300746</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1672925300746</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +383,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Circus news repository" />
     <MESSAGE value="Ticket repository" />
     <MESSAGE value="Circus show repository" />
     <MESSAGE value="Services api" />
@@ -400,6 +407,7 @@
     <MESSAGE value="Find news by name" />
     <MESSAGE value="Ticket controller" />
     <MESSAGE value="Fix routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix routes" />
+    <MESSAGE value="Add properties and dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add properties and dependency" />
   </component>
 </project>
