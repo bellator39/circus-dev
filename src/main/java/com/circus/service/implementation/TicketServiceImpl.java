@@ -6,6 +6,7 @@ import com.circus.domain.Ticket;
 import com.circus.repository.api.TicketRepositoryApi;
 import com.circus.service.api.CircusShowServiceApi;
 import com.circus.service.api.CustomerServiceApi;
+import com.circus.service.api.MailSenderServiceApi;
 import com.circus.service.api.TicketServiceApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @Slf4j
@@ -25,6 +27,7 @@ public class TicketServiceImpl implements TicketServiceApi {
     private final CustomerServiceApi customerService;
     private final CircusShowServiceApi circusShowService;
     private final TicketRepositoryApi ticketRepository;
+    private final MailSenderServiceApi mailSenderServiceApi;
 
     @Override
     public boolean saveTicket(Ticket ticketSave) {
@@ -36,6 +39,10 @@ public class TicketServiceImpl implements TicketServiceApi {
             countTicketShow= Math.toIntExact(countTicketShow - ticketSave.getCountTicket());
             circusCheck.setCountAvailableTicket(countTicketShow);
             circusShowService.updateCircusShow(circusCheck);
+            String message_with_number_ticket = "Здраствуйте, " + customerCheck.getName() +
+                    " спасибо, за приобритение билетов. Номер вашего заказа - " + UUID.randomUUID()
+                    + ". Предъявтье его контролеру на входе. Спасибо, что вы с нами!";
+            mailSenderServiceApi.send(customerCheck.getEmail(),"Билеты на шоу",message_with_number_ticket);
             log.info("Save ticket with service, id customer {} id show {} in {}",customerCheck.getId(),circusCheck.getId(),new Date());
             return ticketRepository.saveTicket(ticketSave);
         }else{

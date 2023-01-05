@@ -22,7 +22,7 @@ public class CircusShowServiceImpl implements CircusShowServiceApi {
     public boolean saveCircusShow(Circus circusSave) {
         Circus circusCheck = circusShowRepository.findAllCircusShow().stream().filter(o1->o1.getName().equals(circusSave.getName())).findFirst().orElse(null);
         if(circusSave!=null && circusCheck==null){
-            log.info("Save circus show with sevice,name {} in {}",circusSave.getName(),new Date());
+            log.info("Save circus show with service,name {} in {}",circusSave.getName(),new Date());
             return circusShowRepository.saveCircusShow(circusSave);
         }else {
             log.error("Cannot save circus show, equals null in {}",new Date());
