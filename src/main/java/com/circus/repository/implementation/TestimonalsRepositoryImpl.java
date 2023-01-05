@@ -30,7 +30,7 @@ public class TestimonalsRepositoryImpl implements TestimonalsRepositoryApi {
 
     @Override
     public boolean deleteTestimonals(Long id) {
-        log.info("Save testimonals with id {} in {}",id,new Date());
+        log.info("Delete testimonals with id {} in {}",id,new Date());
         return database.update(DELETE_TESTIMONALS,id)>0;
     }
 
