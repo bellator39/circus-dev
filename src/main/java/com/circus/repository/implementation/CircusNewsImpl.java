@@ -23,7 +23,7 @@ public class CircusNewsImpl implements CircusNewsRepositoryApi {
     private final JdbcTemplate database;
 
     private final static String SAVE_CIRCUS_NEWS="insert into circusnews(newsname, newstext, date_publication, idauthor, tagnews,urllogonews)" +
-            "values(?,?,?,?,?)";
+            "values(?,?,?,?,?,?)";
     private final static String UPDATE_CIRCUS_NEWS="update circusnews set newsname=?,newstext=?,tagnews=? where id=?";
     private final static String GET_BY_ID_CIRCUS_NEWS="select * from circusnews where id =?";
     private final static String FIND_ALL_CIRCUS_NEWS="select * from circusnews";
