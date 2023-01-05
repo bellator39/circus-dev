@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Delete testimonals by id">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/addnews.ftlh" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add news">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/addtag.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TagNewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TagNewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TagNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TagNewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/addnews.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/addnews.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +125,7 @@
       <workItem from="1672074390569" duration="3087000" />
       <workItem from="1672332579646" duration="32000" />
       <workItem from="1672925016776" duration="992000" />
-      <workItem from="1672929659789" duration="9143000" />
+      <workItem from="1672929659789" duration="10412000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -446,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672937873992</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Add news">
+      <created>1672939069262</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1672939069262</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implement login and registration customer with forms" />
     <MESSAGE value="Home page" />
     <MESSAGE value="About us page" />
     <MESSAGE value="Contact us page" />
@@ -489,6 +498,7 @@
     <MESSAGE value="Testimonals service implementation" />
     <MESSAGE value="All testimonals page" />
     <MESSAGE value="Delete testimonals by id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete testimonals by id" />
+    <MESSAGE value="Add news" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add news" />
   </component>
 </project>

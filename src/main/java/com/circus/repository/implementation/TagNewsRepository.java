@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 @Repository
 @RequiredArgsConstructor
@@ -20,14 +21,20 @@ public class TagNewsRepository implements TagNewsRepositoryApi {
     private final JdbcTemplate dataBase;
 
     private final static String SAVE_TAG_NEWS = "insert into tagnews(tagname) values(?)";
+    private final static String SAVE_TAG_NEWS_WITH_ID = "insert into tagnews(id,tagname) values(?,?)";
+
     private final static String UPDATE_TAG_NEWS = "update tagnews set tagname=? where id =?";
     private final static String FIND_ALL_TAG_NEWS = "select * from tagnews";
     private final static String DELETE_TAG_NEWS = "delete from tagnews where id=?";
 
     @Override
     public boolean saveTag(TagNews tagNewsSave) {
-        log.info("Save new tag with name {} in {}",tagNewsSave.getTagName(),new Date());
-        return dataBase.update(SAVE_TAG_NEWS,tagNewsSave.getTagName())>0;
+        if(tagNewsSave.getId()!=null) {
+            log.info("Save new tag with name {} in {}", tagNewsSave.getTagName(), new Date());
+            return dataBase.update(SAVE_TAG_NEWS, tagNewsSave.getTagName()) > 0;
+        }else{
+            return dataBase.update(SAVE_TAG_NEWS_WITH_ID,new Random().nextInt(10000),tagNewsSave.getTagName())>0;
+        }
     }
 
     @Override

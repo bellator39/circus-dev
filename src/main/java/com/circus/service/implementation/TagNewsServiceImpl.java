@@ -19,7 +19,9 @@ public class TagNewsServiceImpl implements TagNewsServiceApi {
 
     @Override
     public boolean saveTag(TagNews tagNewsSave) {
-        if(!tagNewsSave.getTagName().equals("")){
+        TagNews tagNewsCheck = tagNewsRepository.findAllTagNews().stream().filter(o1->o1.getTagName()
+                .equals(tagNewsSave.getTagName())).findFirst().orElse(null);
+        if(!tagNewsSave.getTagName().equals("") && tagNewsCheck==null){
             log.info("Save tag with services, name {} in {}",tagNewsSave.getTagName(), new Date());
             return tagNewsRepository.saveTag(tagNewsSave);
         }else {

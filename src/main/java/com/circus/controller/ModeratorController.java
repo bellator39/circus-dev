@@ -1,6 +1,7 @@
 package com.circus.controller;
 
 import com.circus.domain.CircusNews;
+import com.circus.domain.TagNews;
 import com.circus.service.api.CircusNewsServiceApi;
 import com.circus.service.api.TagNewsServiceApi;
 import com.circus.service.api.TestimonalsServiceApi;
@@ -48,6 +49,27 @@ public class ModeratorController {
         model.addAttribute("tagList", tagNewsService.findAllTagNews());
         return "admin/addnews";
     }
+
+    @GetMapping("/addtag")
+    public String addtagPage() {
+        return "admin/addtag";
+    }
+
+    @PostMapping("/addtag")
+    public String addTag(@RequestParam("name")String tagName,Model model) {
+        TagNews tagNews = TagNews.builder()
+                .tagName(tagName)
+                .build();
+
+        boolean tagSaveResult = tagNewsService.saveTag(tagNews);
+
+        if(tagSaveResult){
+            return "redirect:/moderator/allnews";
+        }else{
+            model.addAttribute("message","ms");
+            return "admin/addtag";
+        }
+     }
 
     @PostMapping("/addnews/{idauthor}")
     public String addNews(@RequestParam("name") String name,
