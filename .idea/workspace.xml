@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Ticket controller">
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Fix routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;U:/Work/Circus/circus-dev/circus-dev/src/main/resources/templates&quot;,
+    &quot;last_opened_file_path&quot;: &quot;U:/Work/Circus/circus-dev/circus-dev/src/main/resources/static/admin&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;a3a5bc191d9a1b5be0a7a8dfc1b8fb9d&quot;
   },
@@ -61,11 +59,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\admin" />
+      <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\publicpage" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\templates" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\publicpage\css" />
-      <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\publicpage" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\auth" />
-      <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\templates" />
@@ -116,7 +114,10 @@
       <workItem from="1671997154663" duration="8313000" />
       <workItem from="1672013951855" duration="4099000" />
       <workItem from="1672050035447" duration="2175000" />
-      <workItem from="1672052240171" duration="2525000" />
+      <workItem from="1672052240171" duration="2801000" />
+      <workItem from="1672073149853" duration="1204000" />
+      <workItem from="1672074390569" duration="3087000" />
+      <workItem from="1672332579646" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -349,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672054341840</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Fix routes">
+      <created>1672054818653</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1672054818653</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +375,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Circus team repository" />
     <MESSAGE value="Circus news repository" />
     <MESSAGE value="Ticket repository" />
     <MESSAGE value="Circus show repository" />
@@ -392,6 +399,7 @@
     <MESSAGE value="Circus show single" />
     <MESSAGE value="Find news by name" />
     <MESSAGE value="Ticket controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ticket controller" />
+    <MESSAGE value="Fix routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix routes" />
   </component>
 </project>
