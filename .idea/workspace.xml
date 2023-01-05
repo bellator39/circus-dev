@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add all news page">
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Delete news by id">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/editnews.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusNewsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusNewsImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allnews.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allnews.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +122,7 @@
       <workItem from="1672074390569" duration="3087000" />
       <workItem from="1672332579646" duration="32000" />
       <workItem from="1672925016776" duration="992000" />
-      <workItem from="1672929659789" duration="4337000" />
+      <workItem from="1672929659789" duration="5382000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -389,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672933821054</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Delete news by id">
+      <created>1672934062545</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1672934062545</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +415,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tag news services" />
     <MESSAGE value="Team circus service" />
     <MESSAGE value="Circus news service" />
     <MESSAGE value="Contact service" />
@@ -432,6 +439,7 @@
     <MESSAGE value="Add mail config" />
     <MESSAGE value="Java mail sender" />
     <MESSAGE value="Add all news page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add all news page" />
+    <MESSAGE value="Delete news by id" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete news by id" />
   </component>
 </project>

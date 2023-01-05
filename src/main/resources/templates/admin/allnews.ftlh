@@ -7,10 +7,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="text-content colored">
-                            <h1>Ваши билеты</h1>
+                            <h1>Новости</h1>
                             <div class="breadcum-items mt-2">
-                                <span class="item color-primary"><a href="/">Главная /</a></span>
-                                <span class="item colored">Ваши билеты</span>
+                                <span class="item color-primary"><a href="/">Новости /</a></span>
+                                <span class="item colored">Список новостей</span>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                         <td>${ns.idAuthor}</td>
                         <td>${tagService.getTagById(ns.tagNews).tagName}</td>
                         <td><img width="40" height="30" src="${ns.urllogonews}" alt="Not find"/></td>
-                        <td><a class="btn-common">Редактировать</a></td>
+                        <td><a href="/moderator/edit/${ns.id}" class="btn-common">Редактировать</a></td>
                         <td><a href="/moderator/delete/${ns.id}" class="btn-danger">Удалить</a></td>
                     </tr>
                 </#list>
@@ -62,10 +62,4 @@
             </tbody>
         </table>
     </div>
-    <#if message??>
-        <script>
-            alert('Сообщение с инструкцией по дальнейшим действиям отправленно Вам на почту. Спасибо что вы с нами!')
-        </script>
-    </#if>
-
 </@common.page>
