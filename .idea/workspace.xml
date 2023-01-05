@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add message for send">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allnews.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/security.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/configuration/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/RoleUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/RoleUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/api/TagNewsServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/TagNewsServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TagNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TagNewsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/security.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/security.ftlh" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add all news page">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusNewsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/CircusNewsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allnews.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allnews.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +121,7 @@
       <workItem from="1672074390569" duration="3087000" />
       <workItem from="1672332579646" duration="32000" />
       <workItem from="1672925016776" duration="992000" />
-      <workItem from="1672929659789" duration="4014000" />
+      <workItem from="1672929659789" duration="4337000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -391,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672925675910</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Add all news page">
+      <created>1672933821054</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1672933821054</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +407,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Services api" />
     <MESSAGE value="Tag news services" />
     <MESSAGE value="Team circus service" />
     <MESSAGE value="Circus news service" />
@@ -434,6 +431,7 @@
     <MESSAGE value="Add properties and dependency" />
     <MESSAGE value="Add mail config" />
     <MESSAGE value="Java mail sender" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java mail sender" />
+    <MESSAGE value="Add all news page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add all news page" />
   </component>
 </project>

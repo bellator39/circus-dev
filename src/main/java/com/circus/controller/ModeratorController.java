@@ -8,6 +8,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.function.Function;
@@ -27,6 +28,12 @@ public class ModeratorController {
         model.addAttribute("tagService",tagNewsService);
         model.addAttribute("newsList",circusNewsService.findAllCircusNews());
         return "admin/allnews";
+    }
+
+    @GetMapping("/delete/{id}")
+    public String deleteNewsById(@PathVariable("id")Long id){
+        circusNewsService.deleteCircusNews(id);
+        return "redirect:/moderator/allnews";
     }
 
 }

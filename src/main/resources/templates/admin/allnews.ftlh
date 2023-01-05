@@ -49,7 +49,7 @@
                         <td>${tagService.getTagById(ns.tagNews).tagName}</td>
                         <td><img width="40" height="30" src="${ns.urllogonews}" alt="Not find"/></td>
                         <td><a class="btn-common">Редактировать</a></td>
-                        <td><a class="btn-danger">Удалить</a></td>
+                        <td><a href="/moderator/delete/${ns.id}" class="btn-danger">Удалить</a></td>
                     </tr>
                 </#list>
             <#else>
