@@ -69,22 +69,12 @@
 
                             <div class="navbar-collapse collapse" id="slide-navbar-collapse">
                                 <ul class="navbar-nav list-inline text-uppercase">
-                                    <li class="nav-item text-hover active"><a href="/" class="nav-link" data-effect="Home">Главная</a></li>
-                                    <li class="nav-item text-hover"><a href="/allnews" class="nav-link" data-effect="About Us">Список новостей</a></li>
-                                    <li class="nav-item text-hover"><a href="/circus/news" class="nav-link" data-effect="Blogs">Новости</a></li>
-                                    <li class="nav-item text-hover"><a href="/contactus" class="nav-link" data-effect="Contact">Контакты</a></li>
-                                    <li class="nav-item text-hover"><a href="/gallery" class="nav-link" data-effect="Contact">Галерея</a></li>
-
-                                    <li class="nav-item dropdown">
-                                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Каталог событий</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="/circusshow" class="dropdown-item">Полный каталог</a></li>
-                                            <li><a href="/circusshow/type/1" class="dropdown-item">Животные</a></li>
-                                            <li><a href="/circusshow/type/2" class="dropdown-item">Музыкальные</a></li>
-                                            <li><a href="/circusshow/type/3" class="dropdown-item">Огненные</a></li>
-                                        </ul>
-                                    </li>
-
+                                    <#if isModerator>
+                                    <li class="nav-item text-hover active"><a href="/moderator/allnews" class="nav-link" data-effect="About Us">Список новостей</a></li>
+                                    <li class="nav-item text-hover"><a href="/moderator/allTestimonals" class="nav-link" data-effect="Blogs">Список отзывов</a></li>
+                                    <li class="nav-item text-hover"><a href="/contactus" class="nav-link" data-effect="Contact">Добавление новости</a></li>
+                                    <li class="nav-item text-hover"><a href="/gallery" class="nav-link" data-effect="Contact">Вернуться на сайт</a></li>
+                                    </#if>
                                 </ul>
                             </div>
                             <div class="action-menu">

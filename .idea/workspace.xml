@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Testimonals repository api">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TestimonalsRepositoryImpl.java" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Testimonals service implementation">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/alltestimonals.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "U:/Work/Circus/circus-dev/circus-dev/src/main/resources/templates/admin/pattern",
+    "last_opened_file_path": "U:/Work/Circus/circus-dev/circus-dev/src/main/resources/templates/admin",
     "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "a3a5bc191d9a1b5be0a7a8dfc1b8fb9d"
   },
@@ -59,11 +62,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\templates\admin" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\templates\admin\pattern" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\admin" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\publicpage" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\templates" />
-      <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\publicpage\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\templates" />
@@ -119,7 +122,7 @@
       <workItem from="1672074390569" duration="3087000" />
       <workItem from="1672332579646" duration="32000" />
       <workItem from="1672925016776" duration="992000" />
-      <workItem from="1672929659789" duration="6577000" />
+      <workItem from="1672929659789" duration="7827000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -415,7 +418,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672935704327</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Testimonals repository implementation">
+      <created>1672936262215</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1672936262215</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Testimonals service implementation">
+      <created>1672936559832</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1672936559832</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,9 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Circus show service" />
-    <MESSAGE value="Customer service" />
-    <MESSAGE value="Add web mvc config" />
     <MESSAGE value="Implement userdetails and grantedauthorities" />
     <MESSAGE value="Implement user details service" />
     <MESSAGE value="Implement login and registration customer with forms" />
@@ -458,6 +472,9 @@
     <MESSAGE value="Редактирование новости" />
     <MESSAGE value="Testimonals модель" />
     <MESSAGE value="Testimonals repository api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testimonals repository api" />
+    <MESSAGE value="Testimonals repository implementation" />
+    <MESSAGE value="Testimonals service impl" />
+    <MESSAGE value="Testimonals service implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testimonals service implementation" />
   </component>
 </project>

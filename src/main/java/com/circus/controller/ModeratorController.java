@@ -3,6 +3,7 @@ package com.circus.controller;
 import com.circus.domain.CircusNews;
 import com.circus.service.api.CircusNewsServiceApi;
 import com.circus.service.api.TagNewsServiceApi;
+import com.circus.service.api.TestimonalsServiceApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -21,6 +22,7 @@ public class ModeratorController {
 
     private final CircusNewsServiceApi circusNewsService;
     private final TagNewsServiceApi tagNewsService;
+    private final TestimonalsServiceApi testimonalsService;
 
     @GetMapping("/allnews")
     public String adminAllNews(Model model){
@@ -55,7 +57,8 @@ public class ModeratorController {
     }
 
     @GetMapping("/allTestimonals")
-    public String allTestimonals(){
+    public String allTestimonals(Model model){
+        model.addAttribute("testimonalsList",testimonalsService.listTestimonals());
         return "admin/alltestimonals";
     }
 
