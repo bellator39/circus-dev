@@ -9,4 +9,6 @@ public interface TagNewsServiceApi {
     boolean updateTag(TagNews tagNewsUpdate);
     List<TagNews> findAllTagNews();
     boolean deleteTagNews(Long idTagNews);
+
+    TagNews getTagById(Long id);
 }

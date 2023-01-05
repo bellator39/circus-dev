@@ -61,4 +61,8 @@ public class Customer implements UserDetails {
     public boolean isAdmin(){
         return this.rolename==RoleUser.ADMIN;
     }
+
+    public boolean isModerator(){return this.rolename==RoleUser.MODERATOR;}
+
+    public boolean isManager(){return this.rolename==RoleUser.MANAGER;}
 }

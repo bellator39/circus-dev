@@ -55,4 +55,10 @@ public class TagNewsServiceImpl implements TagNewsServiceApi {
             return false;
         }
     }
+
+    @Override
+    public TagNews getTagById(Long id) {
+        return tagNewsRepository.findAllTagNews().stream().filter(o1->o1.getId().
+                equals(id)).findFirst().orElse(null);
+    }
 }

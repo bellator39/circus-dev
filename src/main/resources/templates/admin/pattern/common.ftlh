@@ -22,8 +22,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="/static/publicpage/css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="/static/publicpage/css/style.css">
@@ -39,8 +38,7 @@
                         <div class="wrap flex-container padding-small">
                             <div class="contact-block">
                                 <span class="pr-50"><i class="icon icon-phone"></i><a href="tel:375333280891">375333280891</a></span>
-                                <span class="color-secondary"><i class="icon icon-envelope-o"></i><a
-                                            href="mailto:egorgurinovich@gmail.com"> egorgurinovich@gmail.com</a></span>
+                                <span class="color-secondary"><i class="icon icon-envelope-o"></i><a href="mailto:egorgurinovich@gmail.com"> egorgurinovich@gmail.com</a></span>
                             </div>
 
                             <div class="header-top-right">
@@ -61,39 +59,24 @@
 
                             <div class="navbar-brand">
                                 <a href="/">
-                                    <img width="90" height="80" src="/static/publicpage/images/logo_circus.jpg"
-                                         alt="logo">
+                                    <img width="90" height="80" src="/static/publicpage/images/logo_circus.jpg" alt="logo">
                                 </a>
                             </div>
 
-                            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                                    data-target="#slide-navbar-collapse" aria-controls="slide-navbar-collapse"
-                                    aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#slide-navbar-collapse" aria-controls="slide-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"><i class="icon icon-navicon"></i></span>
                             </button>
 
                             <div class="navbar-collapse collapse" id="slide-navbar-collapse">
                                 <ul class="navbar-nav list-inline text-uppercase">
-                                    <li class="nav-item text-hover active"><a href="/" class="nav-link"
-                                                                              data-effect="Home">Главная</a></li>
-                                    <li class="nav-item text-hover"><a href="/aboutus" class="nav-link"
-                                                                       data-effect="About Us">О нас</a></li>
-                                    <li class="nav-item text-hover"><a href="/circus/news" class="nav-link"
-                                                                       data-effect="Blogs">Новости</a></li>
-                                    <li class="nav-item text-hover"><a href="/contactus" class="nav-link"
-                                                                       data-effect="Contact">Контакты</a></li>
-                                    <li class="nav-item text-hover"><a href="/gallery" class="nav-link"
-                                                                       data-effect="Contact">Галерея</a></li>
-                                    <#if user??>
-                                        <#if isModerator>
-                                            <li class="nav-item text-hover"><a href="/moderator/allnews"
-                                                                               class="nav-link" data-effect="Contact">Модератор|Панель</a>
-                                            </li>
-                                        </#if>
-                                    </#if>
+                                    <li class="nav-item text-hover active"><a href="/" class="nav-link" data-effect="Home">Главная</a></li>
+                                    <li class="nav-item text-hover"><a href="/allnews" class="nav-link" data-effect="About Us">Список новостей</a></li>
+                                    <li class="nav-item text-hover"><a href="/circus/news" class="nav-link" data-effect="Blogs">Новости</a></li>
+                                    <li class="nav-item text-hover"><a href="/contactus" class="nav-link" data-effect="Contact">Контакты</a></li>
+                                    <li class="nav-item text-hover"><a href="/gallery" class="nav-link" data-effect="Contact">Галерея</a></li>
+
                                     <li class="nav-item dropdown">
-                                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false"
-                                           class="nav-link dropdown-toggle">Каталог событий</a>
+                                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Каталог событий</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="/circusshow" class="dropdown-item">Полный каталог</a></li>
                                             <li><a href="/circusshow/type/1" class="dropdown-item">Животные</a></li>
@@ -110,16 +93,8 @@
                                         <i class="icon icon-search"></i>
                                     </a>
                                     <form role="search" method="post" class="search-box" action="/circusshow/find">
-                                        <input name="name" class="search-field text search-input" placeholder="Поиск"
-                                               type="search" style="color:black">
+                                        <input name="name" class="search-field text search-input" placeholder="Поиск" type="search" style="color:black">
                                     </form>
-                                </div>
-                                <div class="shopping-cart">
-                                    <#if user??>
-                                        <a href="/myticket/${currentUserId}">
-                                            <i class="icon icon-shopping-cart"></i>
-                                        </a>
-                                    </#if>
                                 </div>
                             </div><!--action-menu-->
 
@@ -150,7 +125,7 @@
                                 <div class="time-list d-flex">
                                     <ul class="list-unstyled mr-5">
                                         <li>Понедельник - Пятница</li>
-                                        <li>8:00 - 23:30</li>
+                                        <li>8:00 - 23:30 </li>
                                     </ul>
                                     <ul class="list-unstyled">
                                         <li>Суббота - Воскресенье</li>

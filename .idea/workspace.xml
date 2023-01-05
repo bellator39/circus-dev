@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Java mail sender">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TicketServiceImpl.java" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add message for send">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allnews.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/security.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/configuration/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/RoleUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/RoleUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/api/TagNewsServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/TagNewsServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TagNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TagNewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/security.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/security.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,33 +48,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;U:/Work/Circus/circus-dev/circus-dev/src/main/resources/static/admin&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a3a5bc191d9a1b5be0a7a8dfc1b8fb9d&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "U:/Work/Circus/circus-dev/circus-dev/src/main/resources/templates/admin/pattern",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "a3a5bc191d9a1b5be0a7a8dfc1b8fb9d"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\templates\admin\pattern" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\admin" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\publicpage" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\templates" />
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\publicpage\css" />
-      <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\static\auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="U:\Work\Circus\circus-dev\circus-dev\src\main\resources\templates" />
@@ -119,6 +130,7 @@
       <workItem from="1672074390569" duration="3087000" />
       <workItem from="1672332579646" duration="32000" />
       <workItem from="1672925016776" duration="992000" />
+      <workItem from="1672929659789" duration="4014000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
