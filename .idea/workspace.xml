@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add properties and dependency">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/configuration/MailConfig.java" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add mail config">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/MailSenderServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/MailSenderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/api/CircusShowServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/CircusShowServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/CircusShowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/CircusShowServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +121,7 @@
       <workItem from="1672073149853" duration="1204000" />
       <workItem from="1672074390569" duration="3087000" />
       <workItem from="1672332579646" duration="32000" />
-      <workItem from="1672925016776" duration="300000" />
+      <workItem from="1672925016776" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -365,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672925300746</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Add mail config">
+      <created>1672925399071</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1672925399071</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +393,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ticket repository" />
     <MESSAGE value="Circus show repository" />
     <MESSAGE value="Services api" />
     <MESSAGE value="Tag news services" />
@@ -408,6 +417,7 @@
     <MESSAGE value="Ticket controller" />
     <MESSAGE value="Fix routes" />
     <MESSAGE value="Add properties and dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add properties and dependency" />
+    <MESSAGE value="Add mail config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mail config" />
   </component>
 </project>

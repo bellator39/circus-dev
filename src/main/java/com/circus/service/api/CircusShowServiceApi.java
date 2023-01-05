@@ -12,6 +12,5 @@ public interface CircusShowServiceApi {
     List<Circus> findAllCircusShow();
     boolean deleteCircusShow(Long idCircusShow);
     List<Circus> findAllCircusShowByTypeShow(TypeShow typeShow);
-
     List<Circus> findAllByName(String name);
 }
