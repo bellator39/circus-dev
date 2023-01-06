@@ -1438,13 +1438,10 @@ fieldset[disabled] a.btn {
 /* - Buttons Color Scheme
 ------------------------------------------------------------- */
 .btn.btn-common {
-  background: #ce3c83;
-  color: #fff;
+  background: none;
+  color: #202020;
 }
-.btn.btn-common:hover {
-  background: #151515;
-  color: #fff;
-}
+
 .btn.btn-gray,
 .btn.btn-grey {
   background: #9e9e9e;

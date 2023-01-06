@@ -124,6 +124,11 @@
                                         <a href="/myticket/${currentUserId}">
                                             <i class="icon icon-shopping-cart"></i>
                                         </a>
+                                        <form method="post" action="/logout">
+                                            <button class="btn btn-common" type="submit"><i class="icon icon-arrow-thin-left"></i></button>
+                                        </form>
+                                        <#else>
+                                        <a href="/login"><i class="icon icon-arrow-thin-right"></i></a>
                                     </#if>
                                 </div>
                             </div><!--action-menu-->

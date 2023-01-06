@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Modify ticket domain">
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Modify repository and service ticket">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allticketorder.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TicketRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TicketRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,14 +128,7 @@
       <workItem from="1672925016776" duration="992000" />
       <workItem from="1672929659789" duration="10412000" />
       <workItem from="1673022049646" duration="60000" />
-      <workItem from="1673022122452" duration="914000" />
-    </task>
-    <task id="LOCAL-00002" summary="Role user domain">
-      <created>1671832566528</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1671832566528</updated>
+      <workItem from="1673022122452" duration="2511000" />
     </task>
     <task id="LOCAL-00003" summary="Type show domain">
       <created>1671832641045</created>
@@ -467,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673022882518</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Modify repository and service ticket">
+      <created>1673023049913</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1673023049913</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Circus news page" />
     <MESSAGE value="News single page" />
     <MESSAGE value="Gallery page" />
     <MESSAGE value="Circus show list page" />
@@ -510,6 +515,7 @@
     <MESSAGE value="All feedback page" />
     <MESSAGE value="Delete feedback" />
     <MESSAGE value="Modify ticket domain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify ticket domain" />
+    <MESSAGE value="Modify repository and service ticket" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify repository and service ticket" />
   </component>
 </project>

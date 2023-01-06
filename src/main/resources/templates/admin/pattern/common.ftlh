@@ -78,7 +78,7 @@
                                     </#if>
                                     <#if isManager>
                                         <li class="nav-item text-hover active"><a href="/manager/allfeedback" class="nav-link" data-effect="About Us">Список обратной связи</a></li>
-                                        <li class="nav-item text-hover"><a href="/moderator/allTestimonals" class="nav-link" data-effect="Blogs">Список отзывов</a></li>
+                                        <li class="nav-item text-hover"><a href="/manager/allticketorder" class="nav-link" data-effect="Blogs">Список заказов</a></li>
                                         <li class="nav-item text-hover"><a href="/moderator/addnews" class="nav-link" data-effect="Contact">Добавление новости</a></li>
                                         <li class="nav-item text-hover"><a href="/moderator/addtag" class="nav-link" data-effect="Contact">Добавление тега</a></li>
                                         <li class="nav-item text-hover"><a href="/" class="nav-link" data-effect="Contact">Вернуться на сайт</a></li>

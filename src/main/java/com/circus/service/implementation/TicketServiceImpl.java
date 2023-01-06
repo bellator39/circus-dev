@@ -39,6 +39,7 @@ public class TicketServiceImpl implements TicketServiceApi {
             Float summa_order = circusCheck.getPriceShow() * ticketSave.getCountTicket();
             ticketSave.setUuid_order(uuid_order);
             ticketSave.setSumma_order(summa_order);
+            ticketSave.setStatus("ОБРАБОТКА");
             Integer countTicketShow =circusCheck.getCountAvailableTicket();
             countTicketShow= Math.toIntExact(countTicketShow - ticketSave.getCountTicket());
             circusCheck.setCountAvailableTicket(countTicketShow);

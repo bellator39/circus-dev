@@ -19,5 +19,6 @@ public class Ticket {
     private Long countTicket;
     private UUID uuid_order;
     private Float summa_order;
+    private String status;
 
 }
