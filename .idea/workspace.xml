@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add navigation for admin">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allshow.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="All show">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allcustomer.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allnews.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allnews.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/alltestimonals.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/alltestimonals.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allworker.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allworker.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,13 +125,6 @@
       <workItem from="1672929659789" duration="10412000" />
       <workItem from="1673022049646" duration="60000" />
       <workItem from="1673022122452" duration="7752000" />
-    </task>
-    <task id="LOCAL-00011" summary="Ticket repository">
-      <created>1671878673089</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1671878673089</updated>
     </task>
     <task id="LOCAL-00012" summary="Circus show repository">
       <created>1671879432172</created>
@@ -473,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673031690675</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="All show">
+      <created>1673032698307</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1673032698307</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add mail config" />
     <MESSAGE value="Java mail sender" />
     <MESSAGE value="Add all news page" />
     <MESSAGE value="Delete news by id" />
@@ -516,7 +511,8 @@
     <MESSAGE value="Fix static files" />
     <MESSAGE value="Fix login and registration form" />
     <MESSAGE value="Add navigation for admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add navigation for admin" />
+    <MESSAGE value="All show" />
+    <option name="LAST_COMMIT_MESSAGE" value="All show" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

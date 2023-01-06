@@ -27,4 +27,10 @@ public class AdminController {
         return "admin/allshow";
     }
 
+    @GetMapping("/allcustomer")
+    public String CustomerList(Model model){
+        model.addAttribute("customerList",customerService.findAllCustomer());
+        return "admin/allcustomer";
+    }
+
 }
