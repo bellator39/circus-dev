@@ -26,15 +26,16 @@ public class CustomerServiceImpl implements CustomerServiceApi {
     private final BCryptPasswordEncoder passwordEncoder;
     @Override
     public boolean saveCustomer(Customer customerSave) {
-        Customer customer = customerRepository.findCustomerByUsername(customerSave.getUsername());
-        if(customer==null){
+        Customer customerByUsername = customerRepository.findCustomerByUsername(customerSave.getUsername());
+        Customer customerByEmail = customerRepository.findAllCustomer().stream().filter(o1->o1.getEmail().equals(customerSave.getEmail())).findFirst().orElse(null);
+        if(customerByUsername==null && customerByEmail==null){
             log.info("Save customer with service, name {} in {}",customerSave.getName(),new Date());
             customerSave.setPassword(passwordEncoder.encode(customerSave.getPassword()));
             customerSave.setRolename(RoleUser.CUSTOMER);
             customerSave.setDate_registration(LocalDateTime.now());
             return customerRepository.saveCustomer(customerSave);
         }else{
-            log.error("Customer with username {} already exists in {}",customer.getUsername(),new Date());
+            log.error("Customer with username {} already exists in {}",customerSave.getUsername(),new Date());
             return false;
         }
     }

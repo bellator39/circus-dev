@@ -40,7 +40,7 @@ public class CustomerRepositoryApiImpl implements CustomerRepositoryApi {
     public boolean updateCustomer(Customer customerUpdate) {
         log.info("Update customer with id {} in {}",customerUpdate.getId(),new Date());
         return database.update(UPDATE_CUSTOMER,customerUpdate.getName(),customerUpdate.getSoname(),customerUpdate.getUsername(),customerUpdate.getPassword(),
-                customerUpdate.getEmail(),customerUpdate.getRolename(),customerUpdate.getId())>0;
+                customerUpdate.getEmail(),customerUpdate.getRolename().name(),customerUpdate.getId())>0;
     }
 
     @Override

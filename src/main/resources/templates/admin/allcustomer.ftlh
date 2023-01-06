@@ -43,7 +43,7 @@
                         <td>${ts.email}</td>
                         <td>${ts.rolename.name()}</td>
                         <td>${ts.date_registration}</td>
-                        <td><a href="/manager/delete/worker/${ts.id}" class="btn-danger">Удалить</a></td>
+                        <td><a href="/admin/edit/customer/${ts.id}" class="btn-accent">Редактировать</a></td>
                     </tr>
                 </#list>
                 </tbody>

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="All show">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allcustomer.ftlh" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="All customer">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/editcustomer.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allcustomer.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allcustomer.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,13 +127,6 @@
       <workItem from="1672929659789" duration="10412000" />
       <workItem from="1673022049646" duration="60000" />
       <workItem from="1673022122452" duration="7752000" />
-    </task>
-    <task id="LOCAL-00012" summary="Circus show repository">
-      <created>1671879432172</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1671879432172</updated>
     </task>
     <task id="LOCAL-00013" summary="Services api">
       <created>1671890196838</created>
@@ -469,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673032698307</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="All customer">
+      <created>1673033064500</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1673033064500</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Java mail sender" />
     <MESSAGE value="Add all news page" />
     <MESSAGE value="Delete news by id" />
     <MESSAGE value="Редактирование новости" />
@@ -512,7 +513,8 @@
     <MESSAGE value="Fix login and registration form" />
     <MESSAGE value="Add navigation for admin" />
     <MESSAGE value="All show" />
-    <option name="LAST_COMMIT_MESSAGE" value="All show" />
+    <MESSAGE value="All customer" />
+    <option name="LAST_COMMIT_MESSAGE" value="All customer" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
