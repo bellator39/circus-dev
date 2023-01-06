@@ -88,7 +88,7 @@ public class AdminController {
                 .describe(describe)
                 .urlPathLogoPhoto(url)
                 .countAvailableTicket(countticket)
-                .dateShow(LocalDateTime.parse(datetime))
+                .dateShow(LocalDateTime.parse(datetime,DateTimeFormatter.ISO_DATE_TIME))
                 .priceShow(Float.valueOf(price.replace(',','.')))
                 .typeShow(typeshow)
                 .build();
@@ -106,6 +106,37 @@ public class AdminController {
     @GetMapping("/delete/show/{id}")
     public String deleteShow(@PathVariable("id")Long id){
         circusShowService.deleteCircusShow(id);
+        return "redirect:/admin/allshow";
+    }
+
+    @GetMapping("/edit/show/{id}")
+    public String EditShowPage(@PathVariable("id")Long id,
+                               Model model){
+        model.addAttribute("editShow",circusShowService.getCircusShowById(id));
+        model.addAttribute("price",circusShowService.getCircusShowById(id).getPriceShow().toString().replace('.',','));
+        return "admin/editshow";
+    }
+
+    @PostMapping("/edit/show/{id}")
+    public String EditShow(@RequestParam("name")String name,
+                          @RequestParam("countticket")Integer countticket,
+                          @RequestParam("price")String price,
+                          @RequestParam("urlphoto")String url,
+                          @RequestParam("datetime")String datetime,
+                          @RequestParam("describe")String describe,
+                          @RequestParam("typeshow")Long typeshow, Model model,@PathVariable("id")Long id){
+
+        Circus circus = circusShowService.getCircusShowById(id);
+        circus.setName(name);
+        circus.setCountAvailableTicket(countticket);
+        circus.setPriceShow(Float.valueOf(price.replace(',','.')));
+        circus.setUrlPathLogoPhoto(url);
+        circus.setDateShow(LocalDateTime.parse(datetime,DateTimeFormatter.ISO_DATE_TIME));
+        circus.setDescribe(describe);
+        circus.setTypeShow(typeshow);
+
+        circusShowService.updateCircusShow(circus);
+
         return "redirect:/admin/allshow";
     }
 }

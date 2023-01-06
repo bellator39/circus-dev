@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add show">
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Delete show">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/editshow.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/addshow.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/addshow.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allshow.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allshow.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,13 +127,6 @@
       <workItem from="1672929659789" duration="10412000" />
       <workItem from="1673022049646" duration="60000" />
       <workItem from="1673022122452" duration="7752000" />
-    </task>
-    <task id="LOCAL-00015" summary="Team circus service">
-      <created>1671891126651</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1671891126651</updated>
     </task>
     <task id="LOCAL-00016" summary="Circus news service">
       <created>1671891594005</created>
@@ -469,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673041796965</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Delete show">
+      <created>1673042145181</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1673042145181</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Редактирование новости" />
     <MESSAGE value="Testimonals модель" />
     <MESSAGE value="Testimonals repository api" />
     <MESSAGE value="Testimonals repository implementation" />
@@ -512,7 +513,8 @@
     <MESSAGE value="All customer" />
     <MESSAGE value="Edit customer" />
     <MESSAGE value="Add show" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add show" />
+    <MESSAGE value="Delete show" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete show" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
