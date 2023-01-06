@@ -102,4 +102,10 @@ public class AdminController {
             return "admin/addshow";
         }
     }
+
+    @GetMapping("/delete/show/{id}")
+    public String deleteShow(@PathVariable("id")Long id){
+        circusShowService.deleteCircusShow(id);
+        return "redirect:/admin/allshow";
+    }
 }

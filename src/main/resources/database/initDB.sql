@@ -50,7 +50,7 @@ create table tickets
     id            serial
         primary key,
     idshow        integer
-        references circusshow,
+        references circusshow on delete cascade ,
     idcustomer    integer
         references customer,
     datebuy       date,

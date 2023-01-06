@@ -55,7 +55,7 @@
                             </#if>
                         </td>
                         <td><a href="/manager/edit/worker/${ts.id}" class="btn-accent">Редактировать</a></td>
-                        <td><a href="/manager/delete/worker/${ts.id}" class="btn-danger">Удалить</a></td>
+                        <td><a href="/admin/delete/show/${ts.id}" class="btn-danger">Удалить</a></td>
                     </tr>
                 </#list>
                 </tbody>
