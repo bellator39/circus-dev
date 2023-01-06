@@ -14,9 +14,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j
@@ -97,5 +100,26 @@ public class TicketServiceImpl implements TicketServiceApi {
             log.error("Cannot get ticket by customer id, equals null in {}",new Date());
             return null;
         }
+    }
+
+    @Override
+    public List<Ticket>findAllTicketOnToday(){
+        List<Circus>circusShowToday = circusShowService.findAllCircusShow().stream().filter(o1 -> o1.getDateShow()
+                .format(DateTimeFormatter.ISO_DATE)
+                .equals(LocalDateTime.now().format(DateTimeFormatter.ISO_DATE)))
+                .toList();
+        List<Ticket>sourceTicket = ticketRepository.findAllTicket();
+        List<Ticket>resultTicketOnToday = new LinkedList<>();
+        for (Ticket ticket:sourceTicket
+             ) {
+            for (Circus circus:circusShowToday
+                 ) {
+                if(circus.ContaintId(ticket.getIdShow())){
+                    resultTicketOnToday.add(ticket);
+                }
+            }
+        }
+        System.out.println("TICKET"+resultTicketOnToday);
+        return resultTicketOnToday;
     }
 }

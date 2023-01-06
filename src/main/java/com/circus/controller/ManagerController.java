@@ -47,4 +47,12 @@ public class ManagerController {
         return "admin/allticketorder";
     }
 
+    @GetMapping("/allticketorder/today")
+    public String allTicketOrderOnToday(Model model){
+        model.addAttribute("ticketOrder",ticketService.findAllTicketOnToday());
+        model.addAttribute("customerService",customerService);
+        return "admin/allticketorder";
+    }
+
+
 }

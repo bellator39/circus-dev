@@ -19,8 +19,11 @@ public class Circus {
     private LocalDateTime dateShow;
     private Float priceShow;
     private Long typeShow;
-
     public boolean CompareDate(){
         return dateShow.isAfter(LocalDateTime.now());
+    }
+
+    public boolean ContaintId(Long id){
+        return this.id.equals(id);
     }
 }

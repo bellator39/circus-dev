@@ -10,4 +10,5 @@ public interface TicketServiceApi {
     List<Ticket> findAllTicket();
     boolean deleteTicketById(Long idTicket);
     List<Ticket>findAllByCustomerId(Long idCustomer);
+    List<Ticket>findAllTicketOnToday();
 }

@@ -40,7 +40,7 @@ create table if not exists circusshow(
                            describe varchar(1024),
                            urlPathLogoPhoto varchar(256),
                            countAvailableTicket INT,
-                           dateShow date,
+                           dateShow timestamp,
                            priceShow float4,
                            typeshow int REFERENCES typeshow(id) on delete cascade
 );
