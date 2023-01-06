@@ -1,6 +1,7 @@
 package com.circus.controller;
 
 
+import com.circus.domain.Circus;
 import com.circus.domain.Customer;
 import com.circus.domain.RoleUser;
 import com.circus.service.api.CircusShowServiceApi;
@@ -13,6 +14,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.stream.Collectors;
 
 @Controller
@@ -64,4 +67,39 @@ public class AdminController {
         return "redirect:/admin/allcustomer";
     }
 
+    @GetMapping("/addshow")
+    public String addShowPage(){
+        return "admin/addshow";
+    }
+
+    @PostMapping("/addshow")
+    public String addShow(@RequestParam("name")String name,
+                          @RequestParam("countticket")Integer countticket,
+                          @RequestParam("price")String price,
+                          @RequestParam("urlphoto")String url,
+                          @RequestParam("datetime")String datetime,
+                          @RequestParam("describe")String describe,
+                          @RequestParam("typeshow")Long typeshow, Model model){
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+
+        Circus circusShow = Circus.builder()
+                .name(name)
+                .describe(describe)
+                .urlPathLogoPhoto(url)
+                .countAvailableTicket(countticket)
+                .dateShow(LocalDateTime.parse(datetime))
+                .priceShow(Float.valueOf(price.replace(',','.')))
+                .typeShow(typeshow)
+                .build();
+
+        boolean result_save_show = circusShowService.saveCircusShow(circusShow);
+
+        if(result_save_show){
+            return "redirect:/admin/allshow";
+        }else{
+            model.addAttribute("message","ms");
+            return "admin/addshow";
+        }
+    }
 }

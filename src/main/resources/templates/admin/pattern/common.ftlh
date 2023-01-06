@@ -86,10 +86,10 @@
                                     <#if isAdmin>
                                         <li class="nav-item text-hover active"><a href="/admin/allshow" class="nav-link" data-effect="About Us">Список событий</a></li>
                                         <li class="nav-item text-hover"><a href="/admin/allcustomer" class="nav-link" data-effect="Blogs">Список пользователей</a></li>
-                                        <li class="nav-item text-hover"><a href="/moderator/addnews" class="nav-link" data-effect="Contact">Добавление события</a></li>
+                                        <li class="nav-item text-hover"><a href="/admin/addshow" class="nav-link" data-effect="Contact">Добавление события</a></li>
                                         <li class="nav-item dropdown">
                                             <a href="#" data-bs-toggle="dropdown" aria-expanded="false"
-                                               class="nav-link dropdown-toggle">Медератор</a>
+                                               class="nav-link dropdown-toggle">Модератор</a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="/moderator/allnews" class="dropdown-item">Список новостей</a></li>
                                                 <li><a href="/moderator/allTestimonals" class="dropdown-item">Список отзывов</a></li>

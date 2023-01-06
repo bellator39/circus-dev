@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="All customer">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/editcustomer.ftlh" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Edit customer">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/addshow.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allcustomer.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allcustomer.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,13 +125,6 @@
       <workItem from="1672929659789" duration="10412000" />
       <workItem from="1673022049646" duration="60000" />
       <workItem from="1673022122452" duration="7752000" />
-    </task>
-    <task id="LOCAL-00013" summary="Services api">
-      <created>1671890196838</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1671890196838</updated>
     </task>
     <task id="LOCAL-00014" summary="Tag news services">
       <created>1671890662545</created>
@@ -471,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673033064500</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Edit customer">
+      <created>1673040437489</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1673040437489</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add all news page" />
     <MESSAGE value="Delete news by id" />
     <MESSAGE value="Редактирование новости" />
     <MESSAGE value="Testimonals модель" />
@@ -514,7 +511,8 @@
     <MESSAGE value="Add navigation for admin" />
     <MESSAGE value="All show" />
     <MESSAGE value="All customer" />
-    <option name="LAST_COMMIT_MESSAGE" value="All customer" />
+    <MESSAGE value="Edit customer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit customer" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
