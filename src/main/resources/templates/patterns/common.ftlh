@@ -95,6 +95,11 @@
                                                                                class="nav-link" data-effect="Contact">Мэнеджер|Панель</a>
                                             </li>
                                         </#if>
+                                        <#if isAdmin>
+                                            <li class="nav-item text-hover"><a href="/manager/allfeedback"
+                                                                               class="nav-link" data-effect="Contact">Админ|Панель</a>
+                                            </li>
+                                        </#if>
                                     </#if>
                                     <li class="nav-item dropdown">
                                         <a href="#" data-bs-toggle="dropdown" aria-expanded="false"

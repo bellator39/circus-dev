@@ -17,7 +17,7 @@ import java.util.function.Function;
 @Controller
 @RequestMapping("/moderator")
 @Slf4j
-@PreAuthorize("hasAuthority('MODERATOR')")
+@PreAuthorize("hasAnyAuthority('MANAGER','ADMIN')")
 @RequiredArgsConstructor
 public class ModeratorController {
 

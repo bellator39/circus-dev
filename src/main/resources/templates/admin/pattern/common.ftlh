@@ -83,6 +83,32 @@
                                         <li class="nav-item text-hover"><a href="/manager/addworker" class="nav-link" data-effect="Contact">Добавление работника</a></li>
                                         <li class="nav-item text-hover"><a href="/" class="nav-link" data-effect="Contact">Вернуться на сайт</a></li>
                                     </#if>
+                                    <#if isAdmin>
+                                        <li class="nav-item text-hover active"><a href="/moderator/allnews" class="nav-link" data-effect="About Us">Список событий</a></li>
+                                        <li class="nav-item text-hover"><a href="/moderator/allTestimonals" class="nav-link" data-effect="Blogs">Список пользователей</a></li>
+                                        <li class="nav-item text-hover"><a href="/moderator/addnews" class="nav-link" data-effect="Contact">Добавление события</a></li>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" data-bs-toggle="dropdown" aria-expanded="false"
+                                               class="nav-link dropdown-toggle">Медератор</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/moderator/allnews" class="dropdown-item">Список новостей</a></li>
+                                                <li><a href="/moderator/allTestimonals" class="dropdown-item">Список отзывов</a></li>
+                                                <li><a href="/moderator/addnews" class="dropdown-item">Добавление новости</a></li>
+                                                <li><a href="/moderator/addtag" class="dropdown-item">Добавление тега</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" data-bs-toggle="dropdown" aria-expanded="false"
+                                               class="nav-link dropdown-toggle">Менеджер</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/manager/allfeedback" class="dropdown-item">Список обратной связи</a></li>
+                                                <li><a href="/manager/allticketorder" class="dropdown-item">Список заказов</a></li>
+                                                <li><a href="/manager/allworker" class="dropdown-item">Список работников</a></li>
+                                                <li><a href="/manager/addworker" class="dropdown-item">Добавление работника</a></li>
+                                            </ul>
+                                        </li>
+                                         <li class="nav-item text-hover"><a href="/" class="nav-link" data-effect="Contact">Вернуться на сайт</a></li>
+                                    </#if>
                                 </ul>
                             </div>
                             <div class="action-menu">

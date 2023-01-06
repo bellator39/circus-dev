@@ -4,48 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Delete worker">
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Fix login and registration form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/american-express.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/badge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/badge1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/badge2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/banner1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/banner2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/blackforest.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/blog-cake.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/blog-post.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/blog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/breadcookies.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/cake-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/cake-item1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/cake-item2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/cake-item3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/cake-item4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/default-large.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/flower-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/gallery-item1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/gallery-item2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/gallery-item3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/macarons.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/main-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/postImg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/postImg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/postLong.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/postitem.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/postitem1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/postlist.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/smallimg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/special-item.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/sprinkleddonuts.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/tabimg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/tabimg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/team.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/team1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/team2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/publicpage/images/team3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/patterns/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="manager_controller" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,20 +125,6 @@
       <workItem from="1672929659789" duration="10412000" />
       <workItem from="1673022049646" duration="60000" />
       <workItem from="1673022122452" duration="7752000" />
-    </task>
-    <task id="LOCAL-00008" summary="Tag news repository">
-      <created>1671836274069</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1671836274069</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Circus team repository">
-      <created>1671876276901</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1671876276901</updated>
     </task>
     <task id="LOCAL-00010" summary="Circus news repository">
       <created>1671877689109</created>
@@ -507,7 +455,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673029203489</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Fix static files">
+      <created>1673030551590</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1673030551590</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Fix login and registration form">
+      <created>1673030788922</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1673030788922</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,8 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ticket controller" />
-    <MESSAGE value="Fix routes" />
     <MESSAGE value="Add properties and dependency" />
     <MESSAGE value="Add mail config" />
     <MESSAGE value="Java mail sender" />
@@ -550,7 +510,9 @@
     <MESSAGE value="All worker" />
     <MESSAGE value="Add worker" />
     <MESSAGE value="Delete worker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete worker" />
+    <MESSAGE value="Fix static files" />
+    <MESSAGE value="Fix login and registration form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix login and registration form" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

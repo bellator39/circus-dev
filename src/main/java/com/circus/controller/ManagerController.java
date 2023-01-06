@@ -18,7 +18,7 @@ import java.util.List;
 @Controller
 @RequiredArgsConstructor
 @Slf4j
-@PreAuthorize("hasAuthority('MANAGER')")
+@PreAuthorize("hasAnyAuthority('MANAGER','ADMIN')")
 @RequestMapping("/manager")
 public class ManagerController {
 
