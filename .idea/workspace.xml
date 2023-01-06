@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="All feedback page">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ManagerController.java" afterDir="false" />
-    </list>
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Delete feedback" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +119,7 @@
       <workItem from="1672925016776" duration="992000" />
       <workItem from="1672929659789" duration="10412000" />
       <workItem from="1673022049646" duration="60000" />
-      <workItem from="1673022122452" duration="312000" />
+      <workItem from="1673022122452" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1671832134870</created>
@@ -459,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673022302619</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Delete feedback">
+      <created>1673022704826</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1673022704826</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="About us page" />
     <MESSAGE value="Contact us page" />
     <MESSAGE value="Circus news page" />
     <MESSAGE value="News single page" />
@@ -502,6 +506,7 @@
     <MESSAGE value="Delete testimonals by id" />
     <MESSAGE value="Add news" />
     <MESSAGE value="All feedback page" />
-    <option name="LAST_COMMIT_MESSAGE" value="All feedback page" />
+    <MESSAGE value="Delete feedback" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete feedback" />
   </component>
 </project>

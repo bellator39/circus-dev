@@ -3,6 +3,7 @@ package com.circus.domain;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -16,4 +17,7 @@ public class Ticket {
     private Long idCustomer;
     private LocalDateTime dateBuy;
     private Long countTicket;
+    private UUID uuid_order;
+    private Float summa_order;
+
 }

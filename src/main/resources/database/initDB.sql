@@ -45,12 +45,18 @@ create table if not exists circusshow(
                            typeshow int REFERENCES typeshow(id) on delete cascade
 );
 
-create table if not exists tickets(
-                        id serial primary key,
-                        idShow int REFERENCES circusshow(id),
-                        idCustomer int REFERENCES customer(id),
-                        dateBuy date,
-    countTicket integer
+create table tickets
+(
+    id            serial
+        primary key,
+    idshow        integer
+        references circusshow,
+    idcustomer    integer
+        references customer,
+    datebuy       date,
+    "countTicket" integer,
+    uuid_order    uuid,
+    summa_order   double precision
 );
 
 create table if not exists circusteam(
