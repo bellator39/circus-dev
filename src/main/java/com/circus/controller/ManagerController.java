@@ -31,50 +31,50 @@ public class ManagerController {
     private final TeamServiceApi teamService;
 
     @GetMapping("/allfeedback")
-    public String allFeedback(Model model){
-        model.addAttribute("contactList",contactService.findAllContact());
+    public String allFeedback(Model model) {
+        model.addAttribute("contactList", contactService.findAllContact());
         return "admin/allfeedback";
     }
 
     @GetMapping("/feedback/delete/{id}")
-    public String deleteFeedback(@PathVariable("id")Long idfeedback){
+    public String deleteFeedback(@PathVariable("id") Long idfeedback) {
         contactService.deleteContact(idfeedback);
         return "redirect:/manager/allfeedback";
     }
 
     @GetMapping("/allticketorder")
-    public String allTicketOrder(Model model){
-        model.addAttribute("ticketOrder",ticketService.findAllTicket());
-        model.addAttribute("customerService",customerService);
+    public String allTicketOrder(Model model) {
+        model.addAttribute("ticketOrder", ticketService.findAllTicket());
+        model.addAttribute("customerService", customerService);
         return "admin/allticketorder";
     }
 
     @GetMapping("/allticketorder/today")
-    public String allTicketOrderOnToday(Model model){
-        model.addAttribute("ticketOrder",ticketService.findAllTicketOnToday());
-        model.addAttribute("customerService",customerService);
-        model.addAttribute("today","td");
+    public String allTicketOrderOnToday(Model model) {
+        model.addAttribute("ticketOrder", ticketService.findAllTicketOnToday());
+        model.addAttribute("customerService", customerService);
+        model.addAttribute("today", "td");
         return "admin/allticketorder";
     }
 
     @GetMapping("/allworker")
-    public String allWorker(Model model){
-        model.addAttribute("workerList",teamService.findAllTeam());
+    public String allWorker(Model model) {
+        model.addAttribute("workerList", teamService.findAllTeam());
         return "admin/allworker";
     }
 
     @GetMapping("/addworker")
-    public String addWorkerPage(){
+    public String addWorkerPage() {
         return "admin/addworker";
     }
 
     @PostMapping("/addworker")
-    public String addWorker(@RequestParam("name")String name,
-                            @RequestParam("soname")String soname,
-                            @RequestParam("work_position")String workposition,
-                            @RequestParam("describe")String describe,
-                            @RequestParam("link_facebook")String linkfacebook,
-                            @RequestParam("urlphoto")String urlphoto,Model model){
+    public String addWorker(@RequestParam("name") String name,
+                            @RequestParam("soname") String soname,
+                            @RequestParam("work_position") String workposition,
+                            @RequestParam("describe") String describe,
+                            @RequestParam("link_facebook") String linkfacebook,
+                            @RequestParam("urlphoto") String urlphoto, Model model) {
         TeamCircus teamCircus = TeamCircus.builder()
                 .name(name)
                 .soname(soname)
@@ -86,18 +86,44 @@ public class ManagerController {
 
         boolean result_save_team = teamService.saveTeam(teamCircus);
 
-        if(result_save_team){
+        if (result_save_team) {
             return "redirect:/manager/allworker";
-        }else{
-            model.addAttribute("message","ms");
+        } else {
+            model.addAttribute("message", "ms");
             return "admin/addworker";
         }
     }
 
     @GetMapping("/delete/worker/{id}")
-    public String deleteWorker(@PathVariable("id")Long id){
+    public String deleteWorker(@PathVariable("id") Long id) {
         teamService.deleteTeam(id);
         return "redirect:/manager/allworker";
     }
 
+    @GetMapping("/edit/worker/{id}")
+    public String editWorkerPage(@PathVariable("id") Long id,
+                                 Model model) {
+        model.addAttribute("editWorker", teamService.getTeamById(id));
+        return "admin/editworker";
+    }
+
+    @PostMapping("/edit/worker/{id}")
+    public String editWorker(@RequestParam("name") String name,
+                             @RequestParam("soname") String soname,
+                             @RequestParam("work_position") String workposition,
+                             @RequestParam("describe") String describe,
+                             @RequestParam("link_facebook") String linkfacebook,
+                             @RequestParam("urlphoto") String urlphoto, Model model,
+                             @PathVariable("id") Long id) {
+        TeamCircus teamCircus = teamService.getTeamById(id);
+        teamCircus.setName(name);
+        teamCircus.setSoname(soname);
+        teamCircus.setWork_position(workposition);
+        teamCircus.setDescribe(describe);
+        teamCircus.setLink_facebook(linkfacebook);
+        teamCircus.setUrlphoto(urlphoto);
+        teamService.updateTeam(teamCircus);
+        return "redirect:/manager/allworker";
+
+    }
 }
