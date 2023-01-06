@@ -7,10 +7,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="text-content colored">
-                            <h1>Отзывы</h1>
+                            <h1>Работники</h1>
                             <div class="breadcum-items mt-2">
-                                <span class="item color-primary"><a href="/">Отзывы /</a></span>
-                                <span class="item colored">Список отзывов</span>
+                                <span class="item color-primary"><a href="/">Работники /</a></span>
+                                <span class="item colored">Список работников</span>
                             </div>
                         </div>
                     </div>
@@ -19,40 +19,41 @@
         </div>
     </div>
     <div style="display:block; margin: 0 auto; max-width: 1050px; margin-top: 50px" class="table-responsive">
-        <#if testimonalsList??>
+        <#if workerList??>
             <table class="table table-dark">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Имя</th>
                     <th scope="col">Фамилия</th>
-                    <th scope="col">Текст</th>
-                    <th scope="col">Рейтинг</th>
-                    <th scope="col">Дата отправки</th>
+                    <th scope="col">Должность</th>
+                    <th scope="col">Описание</th>
+                    <th scope="col">Ссылка на facebook</th>
+                    <th scope="col">Дата создания</th>
+                    <th scope="col">Ссылка на фото</th>
+                    <th scope="col">Изменить</th>
                     <th scope="col">Удалить</th>
                 </tr>
                 </thead>
                 <tbody>
-
-                <#list testimonalsList as ts>
+                <#list workerList as ts>
                     <tr>
                         <th scope="row">${ts?index}</th>
                         <td>${ts.name}</td>
                         <td>${ts.soname}</td>
-                        <td style="    height: 134px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;">${ts.text}</td>
-                        <td>${ts.rating}</td>
-                        <td>${ts.date_send}</td>
+                        <td>${ts.work_position}</td>
+                        <td>${ts.describe}</td>
+                        <td>${ts.link_facebook}</td>
+                        <td>${ts.date_create}</td>
+                        <td>${ts.urlphoto}</td>
+                        <td><a href="/moderator/testimonals/delete/${ts.id}" class="btn-check"></a></td>
                         <td><a href="/moderator/testimonals/delete/${ts.id}" class="btn-danger">Удалить</a></td>
                     </tr>
                 </#list>
                 </tbody>
             </table>
         <#else>
-            <p>На данный момент отзывов нет.</p>
+            <p>На данный момент работников нет.</p>
         </#if>
     </div>
 </@common.page>

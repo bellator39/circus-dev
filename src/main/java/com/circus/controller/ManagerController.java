@@ -3,6 +3,7 @@ package com.circus.controller;
 import com.circus.domain.Ticket;
 import com.circus.service.api.ContactServiceApi;
 import com.circus.service.api.CustomerServiceApi;
+import com.circus.service.api.TeamServiceApi;
 import com.circus.service.api.TicketServiceApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +29,8 @@ public class ManagerController {
 
     private final CustomerServiceApi customerService;
 
+    private final TeamServiceApi teamService;
+
     @GetMapping("/allfeedback")
     public String allFeedback(Model model){
         model.addAttribute("contactList",contactService.findAllContact());
@@ -51,8 +54,14 @@ public class ManagerController {
     public String allTicketOrderOnToday(Model model){
         model.addAttribute("ticketOrder",ticketService.findAllTicketOnToday());
         model.addAttribute("customerService",customerService);
+        model.addAttribute("today","td");
         return "admin/allticketorder";
     }
 
+    @GetMapping("/allworker")
+    public String allWorker(Model model){
+        model.addAttribute("workerList",teamService.findAllTeam());
+        return "admin/allworker";
+    }
 
 }

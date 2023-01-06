@@ -7,10 +7,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="text-content colored">
-                            <h1>Отзывы</h1>
+                            <h1>Заказы</h1>
                             <div class="breadcum-items mt-2">
-                                <span class="item color-primary"><a href="/">Отзывы /</a></span>
-                                <span class="item colored">Список отзывов</span>
+                                <span class="item color-primary"><a href="/">Заказы /</a></span>
+                                <span class="item colored">Список заказов</span>
                             </div>
                         </div>
                     </div>
@@ -19,6 +19,9 @@
         </div>
     </div>
     <div style="display:block; margin: 0 auto; max-width: 1050px; margin-top: 50px" class="table-responsive">
+        <#if today??>
+         <a style="margin-bottom: 30px" class ="btn btn-accent" href="javascript:(print());"> <i class="icon icon-printer"></i>Распечатать</a>
+        </#if>
         <a style="margin-bottom: 30px" class="btn btn-accent" href="/manager/allticketorder/today">Билеты на сегодня <i class="icon icon-calendar"></i></a>
         <#if ticketOrder?size gt 0>
         <table class="table table-dark">

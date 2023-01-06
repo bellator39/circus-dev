@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="All ticket page">
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Ticket on today">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allworker.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ManagerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/domain/Circus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/domain/Circus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/api/TicketServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/api/TicketServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/initDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/alltestimonals.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/alltestimonals.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allticketorder.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allticketorder.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,14 +126,7 @@
       <workItem from="1672925016776" duration="992000" />
       <workItem from="1672929659789" duration="10412000" />
       <workItem from="1673022049646" duration="60000" />
-      <workItem from="1673022122452" duration="4326000" />
-    </task>
-    <task id="LOCAL-00004" summary="Tag domain">
-      <created>1671832691517</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1671832691517</updated>
+      <workItem from="1673022122452" duration="5383000" />
     </task>
     <task id="LOCAL-00005" summary="Circus domain">
       <created>1671832838781</created>
@@ -472,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673024751596</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Ticket on today">
+      <created>1673026574537</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1673026574537</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Gallery page" />
     <MESSAGE value="Circus show list page" />
     <MESSAGE value="Circus show single" />
     <MESSAGE value="Find news by name" />
@@ -515,6 +513,7 @@
     <MESSAGE value="Modify ticket domain" />
     <MESSAGE value="Modify repository and service ticket" />
     <MESSAGE value="All ticket page" />
-    <option name="LAST_COMMIT_MESSAGE" value="All ticket page" />
+    <MESSAGE value="Ticket on today" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ticket on today" />
   </component>
 </project>
