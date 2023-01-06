@@ -84,7 +84,7 @@
                                         <li class="nav-item text-hover"><a href="/" class="nav-link" data-effect="Contact">Вернуться на сайт</a></li>
                                     </#if>
                                     <#if isAdmin>
-                                        <li class="nav-item text-hover active"><a href="/moderator/allnews" class="nav-link" data-effect="About Us">Список событий</a></li>
+                                        <li class="nav-item text-hover active"><a href="/admin/allshow" class="nav-link" data-effect="About Us">Список событий</a></li>
                                         <li class="nav-item text-hover"><a href="/moderator/allTestimonals" class="nav-link" data-effect="Blogs">Список пользователей</a></li>
                                         <li class="nav-item text-hover"><a href="/moderator/addnews" class="nav-link" data-effect="Contact">Добавление события</a></li>
                                         <li class="nav-item dropdown">

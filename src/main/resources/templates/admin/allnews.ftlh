@@ -19,6 +19,7 @@
         </div>
     </div>
     <div style="display:block; margin: 0 auto; max-width: 1050px; margin-top: 50px" class="table-responsive">
+        <#if newsList?size gt 0>
         <table class="table table-dark">
             <thead>
             <tr>
@@ -34,7 +35,7 @@
             </tr>
             </thead>
             <tbody>
-            <#if newsList??>
+
                 <#list newsList as ns>
                     <tr>
                         <th scope="row">${ns?index}</th>
@@ -52,14 +53,11 @@
                         <td><a href="/moderator/delete/${ns.id}" class="btn-danger">Удалить</a></td>
                     </tr>
                 </#list>
-            <#else>
-                <tr>
-                    <td>
-                        На данный момент билетов нет.
-                    </td>
-                </tr>
-            </#if>
+
             </tbody>
         </table>
+            <#else>
+            <p>На данный момент новостей нет.</p>
+        </#if>
     </div>
 </@common.page>
