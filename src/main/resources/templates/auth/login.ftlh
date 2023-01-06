@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login V2</title>
+    <title>Circus</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link type="image/png" sizes="16x16" rel="icon" href="/static/publicpage/images/brand3.png">
     <link rel="stylesheet" type="text/css" href="/static/auth/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/static/auth/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/static/auth/fonts/iconic/css/material-design-iconic-font.min.css">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="/static/auth/css/util.css">
     <link rel="stylesheet" type="text/css" href="/static/auth/css/main.css">
 </head>
-<body style="background-image: url()">
+<body>
 
 <div class="limiter">
     <div class="container-login100">
