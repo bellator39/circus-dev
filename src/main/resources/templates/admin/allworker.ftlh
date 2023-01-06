@@ -46,8 +46,8 @@
                         <td>${ts.link_facebook}</td>
                         <td>${ts.date_create}</td>
                         <td>${ts.urlphoto}</td>
-                        <td><a href="/moderator/testimonals/delete/${ts.id}" class="btn-check"></a></td>
-                        <td><a href="/moderator/testimonals/delete/${ts.id}" class="btn-danger">Удалить</a></td>
+                        <td><a href="/moderator/testimonals/delete/${ts.id}" class="btn-accent">Редактировать</a></td>
+                        <td><a href="/manager/delete/worker/${ts.id}" class="btn-danger">Удалить</a></td>
                     </tr>
                 </#list>
                 </tbody>

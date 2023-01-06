@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="All worker">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/addworker.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Add worker">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ManagerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/controller/ModeratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TeamServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TeamServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pattern/common.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allworker.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allworker.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,14 +122,7 @@
       <workItem from="1672925016776" duration="992000" />
       <workItem from="1672929659789" duration="10412000" />
       <workItem from="1673022049646" duration="60000" />
-      <workItem from="1673022122452" duration="6662000" />
-    </task>
-    <task id="LOCAL-00006" summary="Init script for create database and create config for use db in code">
-      <created>1671834318605</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1671834318605</updated>
+      <workItem from="1673022122452" duration="6971000" />
     </task>
     <task id="LOCAL-00007" summary="Contact repository">
       <created>1671835199905</created>
@@ -471,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673027917928</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Add worker">
+      <created>1673028929479</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1673028929479</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Circus show single" />
     <MESSAGE value="Find news by name" />
     <MESSAGE value="Ticket controller" />
     <MESSAGE value="Fix routes" />
@@ -514,6 +509,7 @@
     <MESSAGE value="All ticket page" />
     <MESSAGE value="Ticket on today" />
     <MESSAGE value="All worker" />
-    <option name="LAST_COMMIT_MESSAGE" value="All worker" />
+    <MESSAGE value="Add worker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add worker" />
   </component>
 </project>

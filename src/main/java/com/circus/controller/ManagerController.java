@@ -94,4 +94,10 @@ public class ManagerController {
         }
     }
 
+    @GetMapping("/delete/worker/{id}")
+    public String deleteWorker(@PathVariable("id")Long id){
+        teamService.deleteTeam(id);
+        return "redirect:/manager/allworker";
+    }
+
 }
