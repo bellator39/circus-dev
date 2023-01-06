@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Delete feedback" />
+    <list default="true" id="35b7edbb-9d0a-489d-87cf-f9a9924bcd00" name="Changes" comment="Modify ticket domain">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TicketRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/repository/implementation/TicketRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/circus/service/implementation/TicketServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,14 +122,7 @@
       <workItem from="1672925016776" duration="992000" />
       <workItem from="1672929659789" duration="10412000" />
       <workItem from="1673022049646" duration="60000" />
-      <workItem from="1673022122452" duration="614000" />
-    </task>
-    <task id="LOCAL-00001" summary="Init commit">
-      <created>1671832134870</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1671832134870</updated>
+      <workItem from="1673022122452" duration="914000" />
     </task>
     <task id="LOCAL-00002" summary="Role user domain">
       <created>1671832566528</created>
@@ -464,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673022704826</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Modify ticket domain">
+      <created>1673022882517</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1673022882518</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Contact us page" />
     <MESSAGE value="Circus news page" />
     <MESSAGE value="News single page" />
     <MESSAGE value="Gallery page" />
@@ -507,6 +509,7 @@
     <MESSAGE value="Add news" />
     <MESSAGE value="All feedback page" />
     <MESSAGE value="Delete feedback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete feedback" />
+    <MESSAGE value="Modify ticket domain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify ticket domain" />
   </component>
 </project>

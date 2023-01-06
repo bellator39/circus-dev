@@ -35,12 +35,16 @@ public class TicketServiceImpl implements TicketServiceApi {
         Circus circusCheck = circusShowService.getCircusShowById(ticketSave.getIdShow());
         ticketSave.setDateBuy(LocalDateTime.now());
         if(circusCheck!=null && customerCheck!=null){
+            UUID uuid_order = UUID.randomUUID();
+            Float summa_order = circusCheck.getPriceShow() * ticketSave.getCountTicket();
+            ticketSave.setUuid_order(uuid_order);
+            ticketSave.setSumma_order(summa_order);
             Integer countTicketShow =circusCheck.getCountAvailableTicket();
             countTicketShow= Math.toIntExact(countTicketShow - ticketSave.getCountTicket());
             circusCheck.setCountAvailableTicket(countTicketShow);
             circusShowService.updateCircusShow(circusCheck);
             String message_with_number_ticket = "Здраствуйте, " + customerCheck.getName() +
-                    " спасибо, за приобритение билетов. Номер вашего заказа - " + UUID.randomUUID()
+                    " спасибо, за приобритение билетов. Номер вашего заказа - " + uuid_order
                     + ". Предъявтье его контролеру на входе. Спасибо, что вы с нами!";
             mailSenderServiceApi.send(customerCheck.getEmail(),"Билеты на шоу",message_with_number_ticket);
             log.info("Save ticket with service, id customer {} id show {} in {}",customerCheck.getId(),circusCheck.getId(),new Date());
