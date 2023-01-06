@@ -96,7 +96,7 @@ public class ModeratorController {
         }
      }
 
-    @PostMapping("/edit/{id}")
+    @PutMapping("/edit/{id}")
     public String editNewsById(@PathVariable("id") Long id,
                                @RequestParam("name") String name,
                                @RequestParam("Text") String text,

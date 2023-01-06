@@ -1,5 +1,6 @@
 package com.circus.controller;
 
+import com.circus.domain.TeamCircus;
 import com.circus.domain.Ticket;
 import com.circus.service.api.ContactServiceApi;
 import com.circus.service.api.CustomerServiceApi;
@@ -10,9 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -62,6 +61,37 @@ public class ManagerController {
     public String allWorker(Model model){
         model.addAttribute("workerList",teamService.findAllTeam());
         return "admin/allworker";
+    }
+
+    @GetMapping("/addworker")
+    public String addWorkerPage(){
+        return "admin/addworker";
+    }
+
+    @PostMapping("/addworker")
+    public String addWorker(@RequestParam("name")String name,
+                            @RequestParam("soname")String soname,
+                            @RequestParam("work_position")String workposition,
+                            @RequestParam("describe")String describe,
+                            @RequestParam("link_facebook")String linkfacebook,
+                            @RequestParam("urlphoto")String urlphoto,Model model){
+        TeamCircus teamCircus = TeamCircus.builder()
+                .name(name)
+                .soname(soname)
+                .work_position(workposition)
+                .describe(describe)
+                .link_facebook(linkfacebook)
+                .urlphoto(urlphoto)
+                .build();
+
+        boolean result_save_team = teamService.saveTeam(teamCircus);
+
+        if(result_save_team){
+            return "redirect:/manager/allworker";
+        }else{
+            model.addAttribute("message","ms");
+            return "admin/addworker";
+        }
     }
 
 }

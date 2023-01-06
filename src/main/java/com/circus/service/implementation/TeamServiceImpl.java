@@ -20,7 +20,9 @@ public class TeamServiceImpl implements TeamServiceApi {
 
     @Override
     public boolean saveTeam(TeamCircus teamCircusSave) {
-        if(teamCircusSave!=null){
+        TeamCircus teamCircusCheck = teamRepository.findAllTeam().stream().filter(o1->o1.getName().equals(teamCircusSave.getName())
+                && o1.getSoname().equals(teamCircusSave.getSoname())).findFirst().orElse(null);
+        if(teamCircusSave!=null && teamCircusCheck==null){
             teamCircusSave.setDate_create(LocalDateTime.now());
             log.info("Save team circus with service, name {} in {}",teamCircusSave.getName(), new Date());
             return teamRepository.saveTeam(teamCircusSave);
