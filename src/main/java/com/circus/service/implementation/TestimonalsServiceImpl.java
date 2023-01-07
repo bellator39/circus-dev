@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -21,6 +22,7 @@ public class TestimonalsServiceImpl implements TestimonalsServiceApi {
     @Override
     public boolean saveTestimonals(Testimonals testimonals) {
         if(testimonals!=null){
+            testimonals.setDate_send(LocalDateTime.now());
             log.info("Save testimonals with name {} in {}",testimonals.getName(),new Date());
             testimonalsRepository.saveTestimonals(testimonals);
             return true;

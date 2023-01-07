@@ -204,7 +204,7 @@
                         </h2>
                         <p>Все программы уникальны по своей наполненности с большим количеством интересных номеров.</p>
                         <div class="pix_btn mt-4">
-                            <a class="btn btn-outline-light">
+                            <a href="/circusshow" class="btn btn-outline-light">
                                 <span>Перейти</span>
                             </a>
                         </div>
@@ -279,60 +279,98 @@
                 <div class="reviews-content col-md-12 light text-center">
                     <h2 class="section-title">Отзывы</h2>
                     <div class="testimonial-slider">
-                        <div class="testimonials-inner">
-                            <div class="rating padding-small">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                            </div>
-                            <p class="animated zoomIn">“Bakery is ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis
-                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea.”</p>
-                            <div class="testimonial-author">
-                                <img src="/static/publicpage/images/default.png" alt="jane">
-                                <span class="name d-flex justify-content-center mt-3">Jane Marie</span>
-                            </div>
-                        </div><!--reviews-info-->
+                        <#if testimonals?size gt 0>
+                            <#list testimonals as ts>
+                                <div class="testimonials-inner">
+                                    <div class="rating padding-small">
+                                        <#if ts.rating?number==1>
+                                            <i class="icon icon-star"></i>
+                                        </#if>
+                                        <#if ts.rating?number==2>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </#if>
+                                        <#if ts.rating?number==3>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </#if>
+                                        <#if ts.rating?number==4>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </#if>
+                                        <#if ts.rating?number==5>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </#if>
+                                    </div>
+                                    <p class="animated zoomIn">“${ts.text}”</p>
+                                    <div class="testimonial-author">
+                                        <img style="border-radius: 30px" width="100" height="90" src="https://images.unsplash.com/photo-1517732306149-e8f829eb588a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" alt="jane">
+                                        <span class="name d-flex justify-content-center mt-3">${ts.name + " " + ts.soname}</span>
+                                    </div>
+                                </div>
+                            </#list>
+                            <#else>
+                                <div class="testimonials-inner">
+                                    <div class="rating padding-small">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                    </div>
+                                    <p class="animated zoomIn">“Bakery is ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea.”</p>
+                                    <div class="testimonial-author">
+                                        <img src="/static/publicpage/images/default.png" alt="jane">
+                                        <span class="name d-flex justify-content-center mt-3">Jane Marie</span>
+                                    </div>
+                                </div><!--reviews-info-->
+                                <div class="testimonials-inner">
+                                    <div class="rating padding-small">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                    </div>
+                                    <p class="animated zoomIn">This is absolute best product adipisicing elit, sed do eiusmod
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea.”</p>
+                                    <div class="testimonial-author">
+                                        <img src="/static/publicpage/images/default.png" alt="simran">
+                                        <span class="name d-flex justify-content-center mt-3">Simran</span>
+                                    </div>
+                                </div><!--reviews-info-->
+                                <div class="testimonials-inner">
+                                    <div class="rating padding-small">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                    </div>
+                                    <p class="animated zoomIn">“I really love this product sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                        ullamco
+                                        laboris nisi ut aliquip ex ea.”</p>
+                                    <div class="testimonial-author">
+                                        <img src="/static/publicpage/images/default.png" alt="jane">
+                                        <span class="name d-flex justify-content-center mt-3">John Marie</span>
+                                    </div>
+                                </div>
+                        </#if>
 
-                        <div class="testimonials-inner">
-                            <div class="rating padding-small">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                            </div>
-                            <p class="animated zoomIn">This is absolute best product adipisicing elit, sed do eiusmod
-                                tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea.”</p>
-                            <div class="testimonial-author">
-                                <img src="/static/publicpage/images/default.png" alt="simran">
-                                <span class="name d-flex justify-content-center mt-3">Simran</span>
-                            </div>
-                        </div><!--reviews-info-->
-
-                        <div class="testimonials-inner">
-                            <div class="rating padding-small">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                            </div>
-                            <p class="animated zoomIn">“I really love this product sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea.”</p>
-                            <div class="testimonial-author">
-                                <img src="/static/publicpage/images/default.png" alt="jane">
-                                <span class="name d-flex justify-content-center mt-3">John Marie</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

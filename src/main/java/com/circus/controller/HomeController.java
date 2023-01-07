@@ -22,11 +22,15 @@ public class HomeController {
     private final TeamServiceApi teamService;
     private final ContactServiceApi contactService;
 
+    private final TestimonalsServiceApi testimonalsService;
+
+
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("circusShow", circusShowService.findAllCircusShow());
         model.addAttribute("lastnews", circusNewsService.findAllCircusNews().stream().limit(3).collect(Collectors.toList()));
         model.addAttribute("tagservice", tagNewsService);
+        model.addAttribute("testimonals",testimonalsService.listTestimonals());
         return "index";
     }
 

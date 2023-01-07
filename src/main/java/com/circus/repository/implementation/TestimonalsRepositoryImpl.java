@@ -25,7 +25,7 @@ public class TestimonalsRepositoryImpl implements TestimonalsRepositoryApi {
     public boolean saveTestimonals(Testimonals testimonals) {
         log.info("Save testimonals with name {} in {}",testimonals.getName(),new Date());
         return database.update(SAVE_TESTIMONALS,testimonals.getName(),testimonals.getSoname(),
-                testimonals.getText(),testimonals.getRating(),testimonals.getDate_send())>0;
+                testimonals.getText(),Integer.valueOf(testimonals.getRating()),testimonals.getDate_send())>0;
     }
 
     @Override

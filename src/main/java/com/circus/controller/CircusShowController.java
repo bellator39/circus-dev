@@ -1,8 +1,10 @@
 package com.circus.controller;
 
 
+import com.circus.domain.Testimonals;
 import com.circus.domain.TypeShow;
 import com.circus.service.api.CircusShowServiceApi;
+import com.circus.service.api.TestimonalsServiceApi;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class CircusShowController {
 
     private final CircusShowServiceApi circusShowService;
+
+    private final TestimonalsServiceApi testimonalsService;
 
     @GetMapping("/circusshow")
     public String circusShowlist(Model model){
@@ -44,6 +48,28 @@ public class CircusShowController {
         model.addAttribute("circusShow",circusShowService.findAllCircusShowByTypeShow(typeShow));
 
         return "circusshowlist";
+    }
+
+    @GetMapping("/circusshow/testimonals")
+    public String circusTestimonalsPage(){
+        return "testimonals";
+    }
+
+    @PostMapping("/circusshow/testimonals")
+    public String circusTesimonals(@RequestParam("name")String name,
+                                   @RequestParam("soname")String soname,
+                                   @RequestParam("text")String text,
+                                   @RequestParam("rating")Integer rating){
+
+        Testimonals testimonals = Testimonals.builder()
+                .name(name)
+                .soname(soname)
+                .text(text)
+                .rating(rating.toString())
+                .build();
+
+        testimonalsService.saveTestimonals(testimonals);
+        return "redirect:/";
     }
 
 }

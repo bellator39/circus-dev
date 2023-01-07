@@ -20,6 +20,7 @@
     </div><!--site-banner-->
 
     <section class="bg-sand padding-large">
+        <a class="btn-accent" href="/circusshow/testimonals">Оставить отзыв</a>
         <div class="container">
             <div class="row">
 
